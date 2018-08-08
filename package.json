@@ -1,6 +1,6 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "",
   "main": "lib/timeline-reporter.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/TestDepartmentIO/wdio-timeline-reporter#readme",
   "dependencies": {
     "base64-img": "^1.0.4",
-    "fs-extra": "^7.0.0"
+    "fs-extra": "^7.0.0",
+    "humanize-duration": "^3.15.1"
   }
 }
