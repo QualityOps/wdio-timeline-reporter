@@ -1,6 +1,6 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "lib/timeline-reporter.js",
   "scripts": {
