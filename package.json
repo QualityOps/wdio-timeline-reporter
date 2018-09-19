@@ -1,6 +1,6 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A WebdriverIO reporter. Creates a simple HTML report after test runs",
   "main": "lib/timeline-reporter.js",
   "scripts": {
@@ -11,15 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TestDepartmentIO/wdio-timeline-reporter.git"
+    "url": "https://github.com/QualityOps/wdio-timeline-reporter.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/TestDepartmentIO/wdio-timeline-reporter/issues"
+    "url": "https://github.com/QualityOps/wdio-timeline-reporter/issues"
   },
-  "homepage": "https://github.com/TestDepartmentIO/wdio-timeline-reporter#readme",
   "dependencies": {
     "base64-img": "^1.0.4",
     "deepmerge": "^2.1.1",
