@@ -1,7 +1,7 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "A WebdriverIO reporter. Creates a simple HTML report after test runs",
   "main": "lib/timeline-reporter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
