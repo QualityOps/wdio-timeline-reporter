@@ -1,0 +1,12 @@
+{
+    "timelineReporter": {
+        "outputDir": "./bin",
+        "fileName": "timeline-report.html",
+        "images": {
+            "quality": 80,
+            "embed": false,
+            "resize": false,
+            "reductionRatio": 2
+        }
+    }
+}

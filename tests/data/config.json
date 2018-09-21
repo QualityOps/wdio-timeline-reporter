@@ -1,0 +1,76 @@
+{
+    "host": "127.0.0.1",
+    "port": 4444,
+    "sync": true,
+    "specs": [
+        "./test.1.js"
+    ],
+    "suites": {},
+    "exclude": [],
+    "logLevel": "silent",
+    "coloredLogs": true,
+    "deprecationWarnings": true,
+    "baseUrl": "http://bing.com",
+    "bail": 0,
+    "waitforInterval": 500,
+    "waitforTimeout": 10000,
+    "framework": "mocha",
+    "reporters": [
+        "spec",
+        "timeline"
+    ],
+    "reporterOptions": {
+        "timelineReporter": {
+            "outputDir": "./bin",
+            "fileName": "timeline-report.html",
+            "images": {
+                "quality": 80,
+                "embed": false,
+                "resize": false,
+                "reductionRatio": 2
+            }
+        }
+    },
+    "maxInstances": 10,
+    "maxInstancesPerCapability": 100,
+    "connectionRetryTimeout": 90000,
+    "connectionRetryCount": 3,
+    "debug": false,
+    "execArgv": null,
+    "mochaOpts": {
+        "timeout": 180000,
+        "ui": "bdd"
+    },
+    "jasmineNodeOpts": {
+        "defaultTimeoutInterval": 10000
+    },
+    "before": [
+        null
+    ],
+    "beforeSession": [],
+    "beforeSuite": [],
+    "beforeHook": [],
+    "beforeTest": [],
+    "beforeCommand": [],
+    "afterCommand": [],
+    "afterTest": [
+        null
+    ],
+    "afterHook": [],
+    "afterSuite": [],
+    "afterSession": [],
+    "after": [],
+    "onError": [],
+    "onReload": [],
+    "beforeFeature": [],
+    "beforeScenario": [],
+    "beforeStep": [],
+    "afterFeature": [],
+    "afterScenario": [],
+    "afterStep": [],
+    "screenshotPath": "./errorShots/",
+    "services": [
+        "selenium-standalone"
+    ],
+    "watch": false
+}

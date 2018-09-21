@@ -1,0 +1,1339 @@
+{
+    "domain": null,
+    "_events": {},
+    "_eventsCount": 21,
+    "reporters": [
+        {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 8,
+            "baseReporter": "~",
+            "config": {
+                "host": "127.0.0.1",
+                "port": 4444,
+                "sync": true,
+                "specs": [
+                    "./test.1.js"
+                ],
+                "suites": {},
+                "exclude": [],
+                "logLevel": "silent",
+                "coloredLogs": true,
+                "deprecationWarnings": true,
+                "baseUrl": "http://bing.com",
+                "bail": 0,
+                "waitforInterval": 500,
+                "waitforTimeout": 10000,
+                "framework": "mocha",
+                "reporters": [
+                    "spec",
+                    "timeline"
+                ],
+                "reporterOptions": {
+                    "timelineReporter": {
+                        "outputDir": "./bin",
+                        "fileName": "timeline-report.html",
+                        "images": {
+                            "quality": 80,
+                            "embed": true,
+                            "resize": true,
+                            "reductionRatio": 2
+                        }
+                    }
+                },
+                "maxInstances": 10,
+                "maxInstancesPerCapability": 100,
+                "connectionRetryTimeout": 90000,
+                "connectionRetryCount": 3,
+                "debug": false,
+                "execArgv": null,
+                "mochaOpts": {
+                    "timeout": 180000,
+                    "ui": "bdd"
+                },
+                "jasmineNodeOpts": {
+                    "defaultTimeoutInterval": 10000
+                },
+                "before": [
+                    null
+                ],
+                "beforeSession": [],
+                "beforeSuite": [],
+                "beforeHook": [],
+                "beforeTest": [],
+                "beforeCommand": [],
+                "afterCommand": [],
+                "afterTest": [
+                    null
+                ],
+                "afterHook": [],
+                "afterSuite": [],
+                "afterSession": [],
+                "after": [],
+                "onError": [],
+                "onReload": [],
+                "beforeFeature": [],
+                "beforeScenario": [],
+                "beforeStep": [],
+                "afterFeature": [],
+                "afterScenario": [],
+                "afterStep": [],
+                "screenshotPath": "./errorShots/",
+                "services": [
+                    "selenium-standalone"
+                ],
+                "watch": false
+            },
+            "options": {
+                "timelineReporter": "~reporters~0~config~reporterOptions~timelineReporter"
+            },
+            "errorCount": 0,
+            "indents": {
+                "0-0": 0
+            },
+            "suiteIndents": {
+                "0-0": {
+                    "Search Tests 12": 1
+                }
+            },
+            "specs": {
+                "0-0": [
+                    "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                ]
+            },
+            "results": {
+                "0-0": {
+                    "passing": 1,
+                    "pending": 0,
+                    "failing": 0
+                }
+            }
+        },
+        {
+            "domain": null,
+            "_events": {},
+            "_eventsCount": 9,
+            "baseReporter": "~",
+            "config": "~reporters~0~config",
+            "options": {
+                "timelineReporter": "~reporters~0~config~reporterOptions~timelineReporter"
+            },
+            "specs": {
+                "0-0": "~reporters~0~specs~0-0"
+            },
+            "results": {
+                "0-0": {
+                    "passing": 1,
+                    "pending": 0,
+                    "failing": 0
+                }
+            }
+        }
+    ],
+    "printEpilogue": true,
+    "cursor": {},
+    "stats": {
+        "type": "base",
+        "start": "2018-09-20T13:25:12.401Z",
+        "_duration": 9083,
+        "runners": {
+            "0-0": {
+                "type": "runner",
+                "start": "2018-09-20T13:25:15.063Z",
+                "_duration": 0,
+                "cid": "0-0",
+                "capabilities": {
+                    "maxInstances": 5,
+                    "browserName": "chrome"
+                },
+                "sanitizedCapabilities": "chrome",
+                "config": {
+                    "host": "127.0.0.1",
+                    "port": 4444,
+                    "sync": true,
+                    "specs": [
+                        "./test.1.js"
+                    ],
+                    "suites": {},
+                    "exclude": [],
+                    "logLevel": "silent",
+                    "coloredLogs": true,
+                    "deprecationWarnings": true,
+                    "baseUrl": "http://bing.com",
+                    "bail": 0,
+                    "waitforInterval": 500,
+                    "waitforTimeout": 10000,
+                    "framework": "mocha",
+                    "reporters": [
+                        "spec",
+                        "timeline"
+                    ],
+                    "reporterOptions": {
+                        "timelineReporter": {
+                            "outputDir": "./bin",
+                            "fileName": "timeline-report.html",
+                            "images": {
+                                "quality": 80,
+                                "embed": true,
+                                "resize": true,
+                                "reductionRatio": 2
+                            }
+                        }
+                    },
+                    "maxInstances": 10,
+                    "maxInstancesPerCapability": 100,
+                    "connectionRetryTimeout": 90000,
+                    "connectionRetryCount": 3,
+                    "debug": false,
+                    "execArgv": null,
+                    "mochaOpts": {
+                        "timeout": 180000,
+                        "ui": "bdd"
+                    },
+                    "jasmineNodeOpts": {
+                        "defaultTimeoutInterval": 10000
+                    },
+                    "before": [
+                        null
+                    ],
+                    "beforeSession": [],
+                    "beforeSuite": [],
+                    "beforeHook": [],
+                    "beforeTest": [],
+                    "beforeCommand": [
+                        null
+                    ],
+                    "afterCommand": [
+                        null
+                    ],
+                    "afterTest": [
+                        null
+                    ],
+                    "afterHook": [],
+                    "afterSuite": [],
+                    "afterSession": [],
+                    "after": [],
+                    "onError": [],
+                    "onReload": [],
+                    "beforeFeature": [],
+                    "beforeScenario": [],
+                    "beforeStep": [],
+                    "afterFeature": [],
+                    "afterScenario": [],
+                    "afterStep": [],
+                    "screenshotPath": "./errorShots/",
+                    "services": [
+                        "selenium-standalone"
+                    ],
+                    "watch": false,
+                    "desiredCapabilities": {
+                        "maxInstances": 5,
+                        "browserName": "chrome"
+                    }
+                },
+                "specs": {
+                    "7b15398990d52e684d124e0940198876": {
+                        "type": "spec",
+                        "start": "2018-09-20T13:25:15.063Z",
+                        "_duration": 6414,
+                        "files": "~reporters~0~specs~0-0",
+                        "specHash": "7b15398990d52e684d124e0940198876",
+                        "suites": {
+                            "\"before all\" hook0": {
+                                "type": "suite",
+                                "start": "2018-09-20T13:25:16.314Z",
+                                "_duration": 0,
+                                "uid": "\"before all\" hook0",
+                                "title": "Search Tests 1",
+                                "tests": {},
+                                "hooks": {}
+                            },
+                            "Search Tests 12": {
+                                "type": "suite",
+                                "start": "2018-09-20T13:25:16.314Z",
+                                "_duration": 5163,
+                                "uid": "Search Tests 12",
+                                "title": "Search Tests 1",
+                                "tests": {
+                                    "chai js 14": {
+                                        "type": "test",
+                                        "start": "2018-09-20T13:25:16.807Z",
+                                        "_duration": 4670,
+                                        "uid": "chai js 14",
+                                        "title": "chai js 1",
+                                        "state": "pass",
+                                        "screenshots": [],
+                                        "output": [
+                                            {
+                                                "type": "beforecommand",
+                                                "payload": {
+                                                    "event": "runner:beforecommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "element",
+                                                    "args": [
+                                                        "#sb_form_q"
+                                                    ],
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.808Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "POST",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element"
+                                                    },
+                                                    "data": {
+                                                        "using": "id",
+                                                        "value": "sb_form_q"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.809Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": {
+                                                            "ELEMENT": "0.5984329308690013-1"
+                                                        }
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element"
+                                                        },
+                                                        "method": "POST",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2",
+                                                            "Content-Type": "application/json; charset=UTF-8",
+                                                            "Content-Length": 34
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {
+                                                        "using": "id",
+                                                        "value": "sb_form_q"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.847Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "aftercommand",
+                                                "payload": {
+                                                    "event": "runner:aftercommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "element",
+                                                    "args": [
+                                                        "#sb_form_q"
+                                                    ],
+                                                    "result": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": {
+                                                            "ELEMENT": "0.5984329308690013-1",
+                                                            "element-6066-11e4-a52e-4f735466cecf": "0.5984329308690013-1"
+                                                        },
+                                                        "selector": "#sb_form_q"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.847Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "beforecommand",
+                                                "payload": {
+                                                    "event": "runner:beforecommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "setValue",
+                                                    "args": [
+                                                        "chai js"
+                                                    ],
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.848Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "POST",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear"
+                                                    },
+                                                    "data": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.850Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": null
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/clear"
+                                                        },
+                                                        "method": "POST",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2"
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.886Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "POST",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value"
+                                                    },
+                                                    "data": {
+                                                        "value": [
+                                                            "c",
+                                                            "h",
+                                                            "a",
+                                                            "i",
+                                                            "",
+                                                            "j",
+                                                            "s"
+                                                        ],
+                                                        "text": "chai js"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:16.887Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": null
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-1/value"
+                                                        },
+                                                        "method": "POST",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2",
+                                                            "Content-Type": "application/json; charset=UTF-8",
+                                                            "Content-Length": 56
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {
+                                                        "value": [
+                                                            "c",
+                                                            "h",
+                                                            "a",
+                                                            "i",
+                                                            " ",
+                                                            "j",
+                                                            "s"
+                                                        ],
+                                                        "text": "chai js"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.812Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "aftercommand",
+                                                "payload": {
+                                                    "event": "runner:aftercommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "setValue",
+                                                    "args": [
+                                                        "chai js"
+                                                    ],
+                                                    "result": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": null
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.812Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "beforecommand",
+                                                "payload": {
+                                                    "event": "runner:beforecommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "element",
+                                                    "args": [
+                                                        "#sb_form_go"
+                                                    ],
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.813Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "POST",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element"
+                                                    },
+                                                    "data": {
+                                                        "using": "id",
+                                                        "value": "sb_form_go"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.814Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": {
+                                                            "ELEMENT": "0.5984329308690013-2"
+                                                        }
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element"
+                                                        },
+                                                        "method": "POST",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2",
+                                                            "Content-Type": "application/json; charset=UTF-8",
+                                                            "Content-Length": 35
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {
+                                                        "using": "id",
+                                                        "value": "sb_form_go"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.830Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "aftercommand",
+                                                "payload": {
+                                                    "event": "runner:aftercommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "element",
+                                                    "args": [
+                                                        "#sb_form_go"
+                                                    ],
+                                                    "result": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": {
+                                                            "ELEMENT": "0.5984329308690013-2",
+                                                            "element-6066-11e4-a52e-4f735466cecf": "0.5984329308690013-2"
+                                                        },
+                                                        "selector": "#sb_form_go"
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.830Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "beforecommand",
+                                                "payload": {
+                                                    "event": "runner:beforecommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "click",
+                                                    "args": [],
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.832Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "GET",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot"
+                                                    },
+                                                    "data": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:17.833Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": null,
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/screenshot"
+                                                        },
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2"
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:20.238Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "screenshot",
+                                                "payload": {
+                                                    "event": "runner:screenshot",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "filename": "./bin/1537449917832.jpeg",
+                                                    "data": null,
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:20.301Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "POST",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click"
+                                                    },
+                                                    "data": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:20.304Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": null
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/element/0.5984329308690013-2/click"
+                                                        },
+                                                        "method": "POST",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2"
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:21.476Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "aftercommand",
+                                                "payload": {
+                                                    "event": "runner:aftercommand",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "command": "click",
+                                                    "args": [],
+                                                    "result": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "value": null,
+                                                        "_status": 0
+                                                    },
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:21.476Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "command",
+                                                "payload": {
+                                                    "event": "runner:command",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "method": "DELETE",
+                                                    "uri": {
+                                                        "protocol": "http:",
+                                                        "slashes": true,
+                                                        "auth": null,
+                                                        "host": "127.0.0.1:4444",
+                                                        "port": "4444",
+                                                        "hostname": "127.0.0.1",
+                                                        "hash": null,
+                                                        "search": null,
+                                                        "query": null,
+                                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a"
+                                                    },
+                                                    "data": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:21.477Z"
+                                                }
+                                            },
+                                            {
+                                                "type": "result",
+                                                "payload": {
+                                                    "event": "runner:result",
+                                                    "cid": "0-0",
+                                                    "specs": [
+                                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                                    ],
+                                                    "body": {
+                                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                        "status": 0,
+                                                        "value": null
+                                                    },
+                                                    "requestOptions": {
+                                                        "uri": {
+                                                            "protocol": "http:",
+                                                            "slashes": true,
+                                                            "auth": null,
+                                                            "host": "127.0.0.1:4444",
+                                                            "port": "4444",
+                                                            "hostname": "127.0.0.1",
+                                                            "hash": null,
+                                                            "search": null,
+                                                            "query": null,
+                                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a",
+                                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a"
+                                                        },
+                                                        "method": "DELETE",
+                                                        "headers": {
+                                                            "Connection": "keep-alive",
+                                                            "Accept": "application/json",
+                                                            "User-Agent": "webdriverio/webdriverio/4.13.2"
+                                                        },
+                                                        "timeout": 90000
+                                                    },
+                                                    "requestData": {},
+                                                    "title": "chai js 1",
+                                                    "uid": "chai js 14",
+                                                    "parent": "Search Tests 1",
+                                                    "parentUid": "Search Tests 12",
+                                                    "time": "2018-09-20T13:25:21.477Z"
+                                                }
+                                            }
+                                        ],
+                                        "end": "2018-09-20T13:25:21.477Z"
+                                    }
+                                },
+                                "hooks": {
+                                    "\"before all\" hook3": {
+                                        "type": "hook",
+                                        "start": "2018-09-20T13:25:16.314Z",
+                                        "_duration": 493,
+                                        "uid": "\"before all\" hook3",
+                                        "title": "\"before all\" hook",
+                                        "parent": "Search Tests 1",
+                                        "parentUid": "Search Tests 12",
+                                        "end": "2018-09-20T13:25:16.807Z"
+                                    },
+                                    "\"before each\" hook5": {
+                                        "type": "hook",
+                                        "start": "2018-09-20T13:25:16.807Z",
+                                        "_duration": 0,
+                                        "uid": "\"before each\" hook5",
+                                        "title": "\"before each\" hook",
+                                        "parent": "Search Tests 1",
+                                        "parentUid": "Search Tests 12",
+                                        "currentTest": "chai js 1",
+                                        "end": "2018-09-20T13:25:16.807Z"
+                                    },
+                                    "\"after each\" hook6": {
+                                        "type": "hook",
+                                        "start": "2018-09-20T13:25:21.477Z",
+                                        "_duration": 0,
+                                        "uid": "\"after each\" hook6",
+                                        "title": "\"after each\" hook",
+                                        "parent": "Search Tests 1",
+                                        "parentUid": "Search Tests 12",
+                                        "currentTest": "chai js 1",
+                                        "end": "2018-09-20T13:25:21.477Z"
+                                    },
+                                    "\"after all\" hook7": {
+                                        "type": "hook",
+                                        "start": "2018-09-20T13:25:21.477Z",
+                                        "_duration": 0,
+                                        "uid": "\"after all\" hook7",
+                                        "title": "\"after all\" hook",
+                                        "parent": "Search Tests 1",
+                                        "parentUid": "Search Tests 12",
+                                        "end": "2018-09-20T13:25:21.477Z"
+                                    }
+                                },
+                                "end": "2018-09-20T13:25:21.477Z"
+                            }
+                        },
+                        "output": [
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session",
+                                        "path": "/wd/hub/session",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session"
+                                    },
+                                    "data": {
+                                        "desiredCapabilities": {
+                                            "javascriptEnabled": true,
+                                            "locationContextEnabled": true,
+                                            "handlesAlerts": true,
+                                            "rotatable": true,
+                                            "maxInstances": 5,
+                                            "browserName": "chrome",
+                                            "loggingPrefs": {
+                                                "browser": "ALL",
+                                                "driver": "ALL"
+                                            },
+                                            "requestOrigins": {
+                                                "url": "http://webdriver.io",
+                                                "version": "4.13.2",
+                                                "name": "webdriverio"
+                                            }
+                                        }
+                                    },
+                                    "time": "2018-09-20T13:25:15.066Z"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "body": {
+                                        "status": 0,
+                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                        "value": {
+                                            "acceptInsecureCerts": false,
+                                            "acceptSslCerts": false,
+                                            "applicationCacheEnabled": false,
+                                            "browserConnectionEnabled": false,
+                                            "browserName": "chrome",
+                                            "chrome": {
+                                                "chromedriverVersion": "2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db)",
+                                                "userDataDir": "/var/folders/py/s1f943t15n38cz764270h33rvv45s4/T/.org.chromium.Chromium.1li87D"
+                                            },
+                                            "cssSelectorsEnabled": true,
+                                            "databaseEnabled": false,
+                                            "goog:chromeOptions": {
+                                                "debuggerAddress": "localhost:52322"
+                                            },
+                                            "handlesAlerts": true,
+                                            "hasTouchScreen": false,
+                                            "javascriptEnabled": true,
+                                            "locationContextEnabled": true,
+                                            "mobileEmulationEnabled": false,
+                                            "nativeEvents": true,
+                                            "networkConnectionEnabled": false,
+                                            "pageLoadStrategy": "normal",
+                                            "platform": "Mac OS X",
+                                            "rotatable": false,
+                                            "setWindowRect": true,
+                                            "takesHeapSnapshot": true,
+                                            "takesScreenshot": true,
+                                            "unexpectedAlertBehaviour": "",
+                                            "version": "69.0.3497.100",
+                                            "webStorageEnabled": true,
+                                            "webdriver.remote.sessionid": "5f5f09f63e847b2d1e3132a1097b4e1a"
+                                        }
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session",
+                                            "path": "/wd/hub/session",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session"
+                                        },
+                                        "method": "POST",
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.13.2",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 293
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "requestData": {
+                                        "desiredCapabilities": {
+                                            "javascriptEnabled": true,
+                                            "locationContextEnabled": true,
+                                            "handlesAlerts": true,
+                                            "rotatable": true,
+                                            "maxInstances": 5,
+                                            "browserName": "chrome",
+                                            "loggingPrefs": {
+                                                "browser": "ALL",
+                                                "driver": "ALL"
+                                            },
+                                            "requestOrigins": {
+                                                "url": "http://webdriver.io",
+                                                "version": "4.13.2",
+                                                "name": "webdriverio"
+                                            }
+                                        }
+                                    },
+                                    "time": "2018-09-20T13:25:16.305Z"
+                                }
+                            },
+                            {
+                                "type": "beforecommand",
+                                "payload": {
+                                    "event": "runner:beforecommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "command": "url",
+                                    "args": [
+                                        "/"
+                                    ],
+                                    "time": "2018-09-20T13:25:16.315Z"
+                                }
+                            },
+                            {
+                                "type": "command",
+                                "payload": {
+                                    "event": "runner:command",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "method": "POST",
+                                    "uri": {
+                                        "protocol": "http:",
+                                        "slashes": true,
+                                        "auth": null,
+                                        "host": "127.0.0.1:4444",
+                                        "port": "4444",
+                                        "hostname": "127.0.0.1",
+                                        "hash": null,
+                                        "search": null,
+                                        "query": null,
+                                        "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url",
+                                        "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url",
+                                        "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url"
+                                    },
+                                    "data": {
+                                        "url": "http://bing.com/"
+                                    },
+                                    "time": "2018-09-20T13:25:16.317Z"
+                                }
+                            },
+                            {
+                                "type": "result",
+                                "payload": {
+                                    "event": "runner:result",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "body": {
+                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                        "status": 0,
+                                        "value": null
+                                    },
+                                    "requestOptions": {
+                                        "uri": {
+                                            "protocol": "http:",
+                                            "slashes": true,
+                                            "auth": null,
+                                            "host": "127.0.0.1:4444",
+                                            "port": "4444",
+                                            "hostname": "127.0.0.1",
+                                            "hash": null,
+                                            "search": null,
+                                            "query": null,
+                                            "pathname": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url",
+                                            "path": "/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url",
+                                            "href": "http://127.0.0.1:4444/wd/hub/session/5f5f09f63e847b2d1e3132a1097b4e1a/url"
+                                        },
+                                        "method": "POST",
+                                        "headers": {
+                                            "Connection": "keep-alive",
+                                            "Accept": "application/json",
+                                            "User-Agent": "webdriverio/webdriverio/4.13.2",
+                                            "Content-Type": "application/json; charset=UTF-8",
+                                            "Content-Length": 26
+                                        },
+                                        "timeout": 90000
+                                    },
+                                    "requestData": {
+                                        "url": "http://bing.com/"
+                                    },
+                                    "time": "2018-09-20T13:25:16.803Z"
+                                }
+                            },
+                            {
+                                "type": "aftercommand",
+                                "payload": {
+                                    "event": "runner:aftercommand",
+                                    "cid": "0-0",
+                                    "specs": [
+                                        "/Users/beni/lessons/webdriverio-setup/test.1.js"
+                                    ],
+                                    "command": "url",
+                                    "args": [
+                                        "/"
+                                    ],
+                                    "result": {
+                                        "sessionId": "5f5f09f63e847b2d1e3132a1097b4e1a",
+                                        "status": 0,
+                                        "value": null
+                                    },
+                                    "time": "2018-09-20T13:25:16.804Z"
+                                }
+                            }
+                        ],
+                        "end": "2018-09-20T13:25:21.477Z"
+                    }
+                },
+                "sessionID": "5f5f09f63e847b2d1e3132a1097b4e1a"
+            }
+        },
+        "counts": {
+            "suites": 3,
+            "tests": 1,
+            "hooks": 4,
+            "passes": 1,
+            "pending": 0,
+            "failures": 0
+        },
+        "failures": [],
+        "end": "2018-09-20T13:25:21.484Z"
+    }
+}
