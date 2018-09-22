@@ -5,7 +5,7 @@
         "images": {
             "quality": 80,
             "embed": false,
-            "resize": false,
+            "resize": true,
             "reductionRatio": 2
         }
     }
