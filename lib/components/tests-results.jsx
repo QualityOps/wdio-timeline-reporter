@@ -16,13 +16,15 @@ const makeImageSource = (path, embed) => {
 }
 
 const TestTitle = props => {
-    const stateCssAndMessage = {
-        pending: { css: 'is-warning', message: 'Skipped' },
-        pass: { css: 'is-primary', message: 'Passed' },
-        fail: { css: 'is-danger', message: 'Failed' },
+    const stateClassnameAndMessage = {
+        pending: { classname: 'is-warning', message: 'Skipped' },
+        pass: { classname: 'is-primary', message: 'Passed' },
+        fail: { classname: 'is-danger', message: 'Failed' },
     }
+    const { state } = props;
+    const classNameAndFieldText = stateClassnameAndMessage[state];
     return (
-        <span className={`tag ${stateCssAndMessage[props.state].css}`}>{ stateCssAndMessage[props.state].message }</span>   
+        <span className={`tag ${classNameAndFieldText.classname}`}>{ classNameAndFieldText.message }</span>   
     )
 };
 

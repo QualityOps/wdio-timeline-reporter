@@ -1,5 +1,5 @@
 import React from 'react';
-import TestsResult from './tests-results';
+import TestsResults from './tests-results';
 
 const SuitesResults = props => {
     const { suites } = props;
@@ -8,7 +8,7 @@ const SuitesResults = props => {
             return (
                 <div className="box">
                     <h4 className="subtitle is-4">{ item.title }</h4>
-                    <TestsResult tests={ item.tests }/> 
+                    <TestsResults tests={ item.tests }/> 
                 </div>
             )
         })

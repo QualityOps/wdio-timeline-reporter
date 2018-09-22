@@ -10,7 +10,7 @@ const Error = props => {
                 {!!error.type &&
                     <tr>
                         <td>Type:</td>
-                        <td>{type}</td>
+                        <td>{error.type}</td>
                     </tr>
                 }
                 {!!error.message &&
