@@ -1,13 +1,16 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "1.0.7",
+  "version": "1.1.0",
   "description": "A WebdriverIO reporter. Creates a simple HTML report after test runs",
-  "main": "lib/timeline-reporter.js",
+  "main": "build/timeline-reporter.js",
   "scripts": {
-    "test": "rm -rf ./bin/*.html && mocha ./tests/*.js"
+    "clean": "rimraf ./build",
+    "build": "babel lib --out-dir build",
+    "pre:test": "rimraf ./bin/*.html",
+    "test": "npm run pre:test && mocha --require babel-register ./tests/*.js"
   },
   "directories": {
-    "lib": "./lib"
+    "lib": "./build"
   },
   "repository": {
     "type": "git",
@@ -20,13 +23,22 @@
     "url": "https://github.com/QualityOps/wdio-timeline-reporter/issues"
   },
   "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
     "base64-img": "^1.0.4",
     "deepmerge": "^2.1.1",
     "fs-extra": "^7.0.0",
     "humanize-duration": "^3.15.1",
-    "jimp": "^0.5.0"
+    "jimp": "^0.5.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "devDependencies": {
-    "mocha": "^5.2.0"
+    "chai": "^4.1.2",
+    "circular-json": "^0.5.7",
+    "mocha": "^5.2.0",
+    "rimraf": "^2.6.2"
   }
 }
