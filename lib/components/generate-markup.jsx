@@ -3,6 +3,7 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import Modal from './modal';
 import ResultSummary from './result-summary';
 import Results from './results'
+import Footer from './footer'
 
 export const generateMarkup = (props) => {
     const { summary } = props;
@@ -11,6 +12,7 @@ export const generateMarkup = (props) => {
             <Modal />
             <ResultSummary { ...summary }/>
             <Results {...props} />
+            <Footer />
         </div>
     )
 }
