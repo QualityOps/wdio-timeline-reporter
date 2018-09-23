@@ -3,7 +3,7 @@ import Filter from './filter';
 import SpecsResults from './specs-results';
 
 const style = {
-    'padding-bottom': '25px'
+    paddingBottom: 25
 }
 
 const Results = props => {
