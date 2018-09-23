@@ -1,8 +1,9 @@
 import React from 'react';
 
 const ResultsSummary = props => {
-  const { total, passed, failed, skipped, duration } = props;
-  return (
+  const { total, passed, failed, skipped, duration, statsPossiblyInaccurate } = props;
+  return !statsPossiblyInaccurate ? 
+  (
     <section className="section has-background-light">
       <div className="container">
         <div className="columns has-text-centered">
@@ -34,7 +35,21 @@ const ResultsSummary = props => {
         <h3 className="title is-4">Total Duration: { duration }</h3>
       </div>
     </section>
-  );
+  ) : (
+      <section className="section has-background-light">
+        <div className="container">
+          <div className="columns">
+            <div className="column">
+            <article className="message is-danger">
+              <div className="message-body">
+              Something went wrong and some tests returned without a status. Reduce the number of parallel instances in your config and try again
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+  )
 };
 
 export default ResultsSummary;
