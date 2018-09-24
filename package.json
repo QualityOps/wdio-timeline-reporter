@@ -6,12 +6,11 @@
   "scripts": {
     "clean": "rimraf ./build",
     "build": "babel lib --out-dir build",
-    "pre:test": "rimraf ./bin/*.html",
     "release": "np patch",
     "release:patch": "npm run build && np patch",
     "release:minor": "npm run build && np minor",
     "release:major": "npm run build && np major",
-    "test": "npm run pre:test && mocha --require babel-register ./tests/*.js",
+    "test": "mocha --require babel-register ./tests/*.js",
     "prepublish": "npm prune"
   },
   "directories": {
