@@ -29,7 +29,7 @@
     "wdio-plugin",
     "wdio-reporter"
   ],
-  "author": "Benjamin Ifie <dev@qops.io>",
+  "author": "dev@qops.io",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/QualityOps/wdio-timeline-reporter/issues"
