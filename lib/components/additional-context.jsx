@@ -1,5 +1,11 @@
 import React from 'react';
 
+const linkOrPlainText = item => {
+    return item.value.startsWith('<a') ? (
+        <div dangerouslySetInnerHTML={{ __html: item.value }} />
+    ) : item.value
+}
+
 const AdditionalContext = props => {
     const { context } = props;
     return !!context ? 
@@ -18,7 +24,7 @@ const AdditionalContext = props => {
                             (
                                 <tr key={index}>
                                     <td>{ item.title}:</td>
-                                    <td>{ item.value}</td>
+                                    <td>{ linkOrPlainText(item) }</td>
                                 </tr>
                             )    
                          : null

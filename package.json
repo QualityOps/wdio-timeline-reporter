@@ -34,8 +34,8 @@
     "url": "https://github.com/QualityOps/wdio-timeline-reporter/issues"
   },
   "dependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "base64-img": "^1.0.4",

@@ -5,7 +5,7 @@ const Warning = props => {
     (
         <article className="message is-danger">
             <div className="message-body">
-            Something went wrong and some tests returned without a status. Reduce the number of parallel instances in your config and try again
+            Something went wrong and some tests returned without a status. Are you running any tests with
             </div>
         </article>
     ) : null
