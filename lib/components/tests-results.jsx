@@ -10,7 +10,7 @@ const TestTitle = props => {
         pending: { classname: 'is-warning', message: 'Skipped' },
         pass: { classname: 'is-primary', message: 'Passed' },
         fail: { classname: 'is-danger', message: 'Failed' },
-        unknown: { classname: 'is-danger', message: 'Unknown' },
+        unknown: { classname: 'is-warning', message: 'Unknown' },
     }
     const { state } = props;
     const classNameAndFieldText = stateClassnameAndMessage[state];

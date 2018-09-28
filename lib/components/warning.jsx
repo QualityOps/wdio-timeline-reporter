@@ -3,9 +3,9 @@ import React from 'react';
 const Warning = props => {
     return props.state === 'unknown' ?
     (
-        <article className="message is-danger">
+        <article className="message is-warning">
             <div className="message-body">
-            Something went wrong and some tests returned without a status. Are you running any tests with
+            Test returned without a status. Have you focused on a different test in suite using fit in Jasmine?
             </div>
         </article>
     ) : null
