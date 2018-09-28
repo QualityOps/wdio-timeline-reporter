@@ -20,7 +20,7 @@ const ImagesContainer = props => {
                 {
                     test.screenshots.map((screenshot, index) => {
                         return (
-                            <img key={index} className="screenshot-img" src={ makeImageSource(screenshot, test.embedScreenshots) } />    
+                            <img key={index} className="screenshot-img" src={ makeImageSource(screenshot, test.embedImages) } />    
                         )
                     })
                 }
