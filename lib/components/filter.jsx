@@ -4,21 +4,11 @@ const Filter = () => {
     return (
         <div className="columns">
             <div className="column is-half">
-                <div className="field">
-                    <div id="filter" className="control">
-                        <label className="radio">
-                            <input type="radio" name="question" value="all" defaultChecked /> All 
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="question" value="passed" /> Passed
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="question" value="failed" /> Failed
-                        </label>
-                        <label className="radio">
-                            <input type="radio" name="question" value="pending" /> Skipped
-                        </label>
-                    </div>
+                <div id="filter" className="buttons has-addons">
+                    <span className="button is-link is-selected">All</span>
+                    <span className="button">Passed</span>
+                    <span className="button">Failed</span>
+                    <span className="button">Skipped</span>
                 </div>
             </div>
         </div>
