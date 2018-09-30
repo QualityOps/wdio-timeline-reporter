@@ -1,8 +1,6 @@
-Wdio Timeline Reporter
+Wdio Timeline Reporter [![Build Status](https://travis-ci.org/QualityOps/wdio-timeline-reporter.svg?branch=master)]()[![NPM version](https://badge.fury.io/js/wdio-timeline-reporter.svg)]()[![npm](https://img.shields.io/npm/dm/wdio-timeline-reporter.svg?maxAge=2592000)]()
 ======================
 > A one stop shop WebdriverIO reporter for an aggregated visualisation of your test results because "Seeing is believing"
-
-[![Build Status](https://travis-ci.org/QualityOps/wdio-timeline-reporter.svg?branch=master)]()[![NPM version](https://badge.fury.io/js/wdio-timeline-reporter.svg)]()[![npm](https://img.shields.io/npm/dm/wdio-timeline-reporter.svg?maxAge=2592000)]()
 
 ![example.png](./images/example.png)
 
@@ -18,7 +16,7 @@ Because we spend a lot of time debugging failing tests switching from terminal o
 6. Ability to add additional information to test at runtime.
 7. Screenshot service to manage the taking of screenshots including resizing of the images.
    
-An example html report can be found [here](./images/example-timeline-report.html)  
+An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/add-read-me/images/example-timeline-report.html)  
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
 
