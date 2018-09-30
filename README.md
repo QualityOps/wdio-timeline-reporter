@@ -148,8 +148,9 @@ module.exports = {
 };
 ```
 Configuration options are explained below
+
 | option | default | type | description |
-| - | - | - | - |
-| outputDir| ./ | string | directory where screenshots will be saved. Defaults to working directory |
+| -- | -- | -- | -- |
+| outputDir | ./ | string | directory where screenshots will be saved. Defaults to working directory |
 | images | ```{ quality: 70, resize: false, reductionRatio: 1 }``` | object (quality and reductionRatio are of type Number and resize is a boolean) | if resize is true, service will use `quality` and `reductionRatio` values to resize the images. Resizing is a great option if you chose to embed your images as base64. Allowed range for `images.quality` are `1 - 100` inclusive and `1 - 5 ` for `images.reductionRatio` |
-| strategy | none | string | `none` - no screenshots, `error` - screenshots only on error, `verbose` - screenshots before every click |
+| strategy | none | string | `none` will not take any screenshots, `error` will take screenshots only on error, `verbose` will take screenshots before every click |
