@@ -6,7 +6,7 @@ const SpecsResults = props => {
     return (
         specs.map(item => {
             return (
-                <div className="box">
+                <div className="box" data-box-is="spec">
                     <h4 className="title is-4">Spec: { item.filename } ({ item.duration })</h4>
                     <SuiteResults suites={ item.suites }/> 
                 </div>

@@ -5,10 +5,10 @@ const Filter = () => {
         <div className="columns">
             <div className="column is-half">
                 <div id="filter" className="buttons has-addons">
-                    <span className="button is-link is-selected">All</span>
-                    <span className="button">Passed</span>
-                    <span className="button">Failed</span>
-                    <span className="button">Skipped</span>
+                    <span className="button is-link is-selected" data-status="all">All</span>
+                    <span className="button" data-status="passed">Passed</span>
+                    <span className="button" data-status="failed">Failed</span>
+                    <span className="button" data-status="skipped">Skipped</span>
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@ const TestsResults = props => {
     const { tests } = props;
     return tests.map((test, index) => {
         return (
-            <div key={index} className={`test ${test.state}`}>
+            <div key={index} className={`box test ${test.state}`}>
                 <p className="subtitle is-5">
                     <TestTitle state={ test.state } /> { test.title }
                 </p>
