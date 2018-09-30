@@ -1,6 +1,7 @@
 Wdio Timeline Reporter 
-[![Build Status](https://travis-ci.org/QualityOps/wdio-timeline-reporter.svg?branch=master)]()[![NPM version](https://badge.fury.io/js/wdio-timeline-reporter.svg)]()[![npm](https://img.shields.io/npm/dm/wdio-timeline-reporter.svg?maxAge=2592000)]()
 ======================
+[![Build Status](https://travis-ci.org/QualityOps/wdio-timeline-reporter.svg?branch=master)]()[![NPM version](https://badge.fury.io/js/wdio-timeline-reporter.svg)]()[![npm](https://img.shields.io/npm/dm/wdio-timeline-reporter.svg?maxAge=2592000)]()
+
 > A one stop shop WebdriverIO reporter for an aggregated visualisation of your test results because "Seeing is believing"
 
 ![example.png](./images/example.png)
