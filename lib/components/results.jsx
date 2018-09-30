@@ -11,7 +11,7 @@ const Results = props => {
         <section className="has-background-grey-lighter" style={ style }>
             <div className="container">
                 <Filter />
-                <div className="tests">
+                <div id="results" className="tests all">
                     <SpecsResults specs={ props.specs } />
                 </div>
             </div>
