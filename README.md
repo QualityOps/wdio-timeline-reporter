@@ -1,4 +1,4 @@
-WDIO Timeline Reporter
+Wdio Timeline Reporter
 ======================
 > A one stop shop WebdriverIO reporter for an aggregated visualisation of your test results because "Seeing is believing"
 
