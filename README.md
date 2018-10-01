@@ -16,7 +16,7 @@ Because we spend a lot of time debugging failing tests switching from terminal o
 4. Test Results filtering. Great for focusing on failed tests
 5. Error stack trace attached to test.
 6. Ability to add additional information to test at runtime.
-7. No post processing required. On completion of wdio test process, a static html report file will ge generated.
+7. No post processing required. On completion of wdio test process, a static html report file will get generated.
 8. Screenshot service to manage the taking of screenshots including resizing of the images.
    
 An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/master/images/example-timeline-report.html)  
