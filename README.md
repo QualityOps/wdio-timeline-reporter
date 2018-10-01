@@ -120,6 +120,8 @@ Screenshot Service
 ==================
 The Screenshot Service is a webdriverIO service written to work in tandem with timeline reporter. As you can guess from the name, the service takes screenshots during tests execution. You have the option to reduce the size and quality of the images. This is configurable using options the service provides. You would not require to specify `screenshotPath` in wdio.conf.js as the service will replicate the feature provided by supplying that property.
 
+Note that this service does not have to be used with the reporter. Any screenshots taken during test execution will by default end up in the reporter.
+
 ### Usage
  Import or require the module from `wdio-timeline-reporter` as shown below and then add `ScreenshotService` to the services array in your wdio config file.
 
