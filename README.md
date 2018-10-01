@@ -98,7 +98,7 @@ describe('Suite', function() {
         // object literal parameter
         TimelineReporter.addContext({
           title: 'Test User',
-          value: 'user id create during the test'
+          value: 'user id created during the test'
         });
 
         // string parameter
