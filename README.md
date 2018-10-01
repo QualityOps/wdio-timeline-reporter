@@ -88,6 +88,7 @@ The `TimelineReporter.addContext` static method accepts either a string paramete
 ```js
 { title: 'sessionId', value: 'b59bb9ec-ab15-475e-9ce6-de8a14ca0cd3' }
 ```
+value could be also be a link
 
 ##### Mocha example
 ```js
@@ -99,6 +100,12 @@ describe('Suite', function() {
         TimelineReporter.addContext({
           title: 'Test User',
           value: 'user id created during the test'
+        });
+
+        // value as anchor tag
+        TimelineReporter.addContext({
+          title: 'Test User',
+          value: '<a href="">Some important link related to test</a>'
         });
 
         // string parameter
