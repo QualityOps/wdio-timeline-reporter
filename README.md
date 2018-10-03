@@ -19,6 +19,8 @@ Because we spend a lot of time debugging failing tests switching from terminal o
 7. No post processing required. On completion of wdio test process, a static html report file will get generated.
 8. Screenshot service to manage the taking of screenshots including resizing of the images.
    
+__Note that inbuilt image manipulation capability makes this reporter quite sizeable in comparison to the others__
+   
 An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/master/images/example-timeline-report.html)  
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
