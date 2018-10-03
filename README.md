@@ -48,7 +48,7 @@ A dependency will be added to your `package.json`
 
 ```js
 // wdio.conf.js
-module.exports = {
+exports.config = {
   // ...
   reporters: ['timeline'],
   // ...
@@ -69,7 +69,7 @@ The following configuration options are supported:
 If you wish to override the default configuration add a ```timelineReporter``` object to ```reporterOptions``` in your wdio config as shown below.
 ```js
 // wdio.conf.js
-module.exports = {
+exports.config = {
   // ...
   reporters: ['timeline'],
   reporterOptions: {
@@ -131,7 +131,7 @@ Note that this service does not have to be used with the reporter. Any screensho
 // wdio.conf.js
 const ScreenshotService = require('wdio-timeline-reporter/screenshot-service')
 
-module.exports = {
+exports.config = {
   // ...
   services: [ ScreenshotService ],
   // ...
@@ -144,7 +144,7 @@ If you wish to override the default configuration, add a screenshotService objec
 // wdio.conf.js
 const ScreenshotService = require('wdio-timeline-reporter/screenshot-service')
 
-module.exports = {
+exports.config = {
   // ...
   services: [ ScreenshotService ],
   screenshotService: {
