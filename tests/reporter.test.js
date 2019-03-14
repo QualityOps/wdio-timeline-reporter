@@ -12,7 +12,7 @@ let filename;
 let testResults;
 
 describe('on:end event should create html file', function () {
-    
+
     before(function() {
         timelineReporter = new TimelineReporter(baseReporter, config, options);
         filename = `${Date.now().toString()}.html`;
@@ -52,7 +52,7 @@ describe('on:end event should create html file', function () {
 
     it('should have a field summary containing test summary', function() {
         const { summary } = testResults;
-        expect(summary).to.deep.equal({ 
+        expect(summary).to.deep.equal({
             passed: 5,
             failed: 1,
             skipped: 1,
@@ -66,7 +66,7 @@ describe('on:end event should create html file', function () {
         expect(specs.length).to.equal(5);
     });
 
-    it('creates report with specified filename', function () {      
+    it('creates report with specified filename', function () {
         expect(fse.existsSync(`./bin/${filename}`)).to.be.true
     });
 });
