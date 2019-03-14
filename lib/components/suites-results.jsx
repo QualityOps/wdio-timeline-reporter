@@ -1,14 +1,17 @@
 import React from 'react';
 import TestsResults from './tests-results';
+import LinkableHeader, { makeId } from './linkable-header';
 
 const SuitesResults = props => {
     const { suites } = props;
     return (
         suites.map(item => {
+            const id = makeId(item.title);
+
             return (
-                <div className="box" data-box-is="suite">
-                    <h4 className="subtitle is-4">{ item.title }</h4>
-                    <TestsResults tests={ item.tests }/> 
+                <div className="box suites-results" data-box-is="suite">
+                    <LinkableHeader styleName={'subtitle'} level={4} id={id}>{ item.title }</LinkableHeader>
+                    <TestsResults tests={ item.tests }/>
                 </div>
             )
         })
