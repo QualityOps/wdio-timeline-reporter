@@ -6,7 +6,7 @@ Wdio Timeline Reporter
 
 ![example.png](./images/example.png)
 
-### WARNING!!! VERSION 5 of webdriverio is not currently supported
+### <span style="color:red">some **WARNING!!! VERSION 5 of webdriverio is not currently supported** text</span>
 
 ## Why use it? 
 Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok. Quite a few other use cases out there...
