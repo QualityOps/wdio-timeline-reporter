@@ -67,14 +67,14 @@ If you wish to override the default reporter configuration add a reporterOptions
 
 ![reporter-options.png](./images/reporter-options.png)
 
-__1.__ Directory where html file and screenshots will be created in. Default value is ```./.timeline```
-__2.__ Name of report html file. Default value is ```timeline-report.html```
-__3.__ Embed images as base64 in html file. Default value is ```false```
-__4.__ Object options for image manipulation
-__5.__ Set JPEG quality. Only relevant if ```resize``` option is ```true```. The smaller the value, the smaller image size and quality would be. Default value is ```70```. Max value allowed is ```100```
-__6.__ Resize image. Default value is ```false```
-__7.__ value to decrease the total number of pixels by. Only relevant if ```resize``` option is true. Defaults to ```1``` Valid values ```1 - 5```
-__8.__ how often to take screenshots. Supported values are ```on:error```, ```before:click```, ```none```. Defaults to ```none```. ```before:click``` is a great option for creating a timeline of screenshots of app under test.
+1. Directory where html file and screenshots will be created in. Default value is ```./.timeline```
+2. Name of report html file. Default value is ```timeline-report.html```
+3. Embed images as base64 in html file. Default value is ```false```
+4. Object options for image manipulation
+5. Set JPEG quality. Only relevant if ```resize``` option is ```true```. The smaller the value, the smaller image size and quality would be. Default value is ```70```. Max value allowed is ```100```
+6. Resize image. Default value is ```false```
+7. value to decrease the total number of pixels by. Only relevant if ```resize``` option is true. Defaults to ```1``` Valid values ```1 - 5```
+8. how often to take screenshots. Supported values are ```on:error```, ```before:click```, ```none```. Defaults to ```none```. ```before:click``` is a great option for creating a timeline of screenshots of app under test.
 
 
 ### Add additional information to test context
