@@ -26,7 +26,7 @@ Instructions on how to install `WebdriverIO` can be found [here](http://webdrive
 
 ## Installation
 
-<span style="color:red">For version compatible with webdriverio version 4 see [here](https://github.com/QualityOps/wdio-timeline-reporter/tree/V4)</span>
+__FOR VERSION COMPATIBLE WITH WEBDRIVERIO V4 SEE [HERE](https://github.com/QualityOps/wdio-timeline-reporter/tree/V4)__
 
 ```shell
 npm install --save wdio-timeline-reporter
