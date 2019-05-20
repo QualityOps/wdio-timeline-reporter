@@ -48,7 +48,7 @@ A dependency will be added to your `package.json`
 
  Also import and add ```TimelineService``` from wdio-timeline-reporter. 
  
- Service is mandatory to combine reports and create html as reporters are now initialised per runner instance in webdriverio 5 (discussion on webdriverio)[https://github.com/webdriverio/webdriverio/issues/3780]
+ Service is mandatory to combine reports and create html as reporters are now initialised per runner instance in webdriverio 5. [See open discussion on webdriverio](https://github.com/webdriverio/webdriverio/issues/3780)
 
 ```js
 // wdio.conf.js
