@@ -1,0 +1,132 @@
+{
+    "type": "runner",
+    "start": "2019-05-18T09:02:39.764Z",
+    "_duration": 69,
+    "cid": "0-0",
+    "capabilities": {
+        "acceptInsecureCerts": false,
+        "acceptSslCerts": false,
+        "applicationCacheEnabled": false,
+        "browserConnectionEnabled": false,
+        "browserName": "chrome",
+        "chrome": {
+            "chromedriverVersion": "73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72)",
+            "userDataDir": "/tmp/.com.google.Chrome.S59ed0"
+        },
+        "cssSelectorsEnabled": true,
+        "databaseEnabled": false,
+        "goog:chromeOptions": {
+            "debuggerAddress": "localhost:37963"
+        },
+        "handlesAlerts": true,
+        "hasTouchScreen": false,
+        "javascriptEnabled": true,
+        "locationContextEnabled": true,
+        "mobileEmulationEnabled": false,
+        "nativeEvents": true,
+        "networkConnectionEnabled": false,
+        "pageLoadStrategy": "normal",
+        "platform": "Linux",
+        "proxy": {},
+        "rotatable": false,
+        "setWindowRect": true,
+        "strictFileInteractability": false,
+        "takesHeapSnapshot": true,
+        "takesScreenshot": true,
+        "timeouts": {
+            "implicit": 0,
+            "pageLoad": 300000,
+            "script": 30000
+        },
+        "unexpectedAlertBehaviour": "ignore",
+        "version": "73.0.3683.75",
+        "webStorageEnabled": true
+    },
+    "sanitizedCapabilities": "chrome.73_0_3683_75.linux",
+    "config": {
+        "hostname": "localhost",
+        "port": 4444,
+        "protocol": "http",
+        "sync": true,
+        "specs": [
+            "./test.1.js"
+        ],
+        "suites": {},
+        "exclude": [],
+        "logLevel": "error",
+        "logLevels": {},
+        "excludeDriverLogs": [],
+        "baseUrl": "http://google.com",
+        "bail": 0,
+        "waitforInterval": 500,
+        "waitforTimeout": 10000,
+        "framework": "mocha",
+        "reporters": [
+            [
+                "timeline",
+                {
+                    "outputDir": "./output/.timeline"
+                }
+            ]
+        ],
+        "maxInstances": 5,
+        "maxInstancesPerCapability": 100,
+        "filesToWatch": [],
+        "connectionRetryTimeout": 90000,
+        "connectionRetryCount": 3,
+        "debug": false,
+        "execArgv": [],
+        "runnerEnv": {},
+        "runner": "local",
+        "mochaOpts": {
+            "timeout": 60000,
+            "ui": "bdd"
+        },
+        "jasmineNodeOpts": {
+            "defaultTimeoutInterval": 10000
+        },
+        "cucumberOpts": {
+            "timeout": 10000
+        },
+        "before": [],
+        "beforeSession": [],
+        "beforeSuite": [],
+        "beforeHook": [],
+        "beforeTest": [],
+        "beforeCommand": [],
+        "afterCommand": [],
+        "afterTest": [],
+        "afterHook": [],
+        "afterSuite": [],
+        "afterSession": [],
+        "after": [],
+        "onReload": [],
+        "beforeFeature": [],
+        "beforeScenario": [],
+        "beforeStep": [],
+        "afterFeature": [],
+        "afterScenario": [],
+        "afterStep": [],
+        "path": "/wd/hub",
+        "services": [
+            [
+                null,
+                {}
+            ]
+        ],
+        "_": [],
+        "$0": "/Users/beni/dev/wdio/node_modules/.bin/wdio",
+        "capabilities": {
+            "browserName": "chrome",
+            "version": "73.0"
+        }
+    },
+    "specs": [
+        "/Users/beni/dev/wdio/test.1.js"
+    ],
+    "sessionId": "ec9887dcedf621d50db94d1ea1f36f14",
+    "isMultiremote": false,
+    "retry": 0,
+    "failures": 1,
+    "end": "2019-05-18T09:02:39.833Z"
+}

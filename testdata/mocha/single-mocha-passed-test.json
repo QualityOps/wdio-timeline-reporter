@@ -1,0 +1,52 @@
+{
+   "suite-0-0": {
+     "type": "suite",
+     "start": "2019-05-18T09:09:14.078Z",
+     "_duration": 4347,
+     "uid": "suite-0-0",
+     "cid": "0-0",
+     "title": "1",
+     "fullTitle": "1",
+     "tests": [
+       {
+         "type": "test",
+         "start": "2019-05-18T09:09:14.078Z",
+         "_duration": 4335,
+         "uid": "test-00-0",
+         "cid": "0-0",
+         "title": "should open",
+         "fullTitle": "1 should open",
+         "output": [],
+         "state": "passed",
+         "screenshots": [],
+         "end": "2019-05-18T09:09:18.413Z"
+       }
+     ],
+     "hooks": [
+       {
+         "type": "hook",
+         "start": "2019-05-18T09:09:14.078Z",
+         "_duration": 1,
+         "uid": "hook-00-0",
+         "cid": "0-0",
+         "title": "\"before each\" hook",
+         "parent": "",
+         "errors": [],
+         "end": "2019-05-18T09:09:14.079Z"
+       },
+       {
+         "type": "hook",
+         "start": "2019-05-18T09:09:18.425Z",
+         "_duration": 0,
+         "uid": "hook-00-1",
+         "cid": "0-0",
+         "title": "\"after each\" hook",
+         "parent": "",
+         "errors": [],
+         "end": "2019-05-18T09:09:18.425Z"
+       }
+     ],
+     "suites": [],
+     "end": "2019-05-18T09:09:18.425Z"
+   }
+}
