@@ -1,0 +1,27 @@
+{
+    "1suite1": {
+        "type": "suite",
+        "start": "2019-05-18T10:07:20.560Z",
+        "_duration": 4370,
+        "uid": "1suite1",
+        "cid": "0-0",
+        "title": "1",
+        "tests": [
+            {
+                "type": "test",
+                "start": "2019-05-18T10:07:20.562Z",
+                "_duration": 4357,
+                "uid": "should openspec0",
+                "cid": "0-0",
+                "title": "should open",
+                "output": [],
+                "state": "passed",
+                "screenshots": [],
+                "end": "2019-05-18T10:07:24.919Z"
+            }
+        ],
+        "hooks": [],
+        "suites": [],
+        "end": "2019-05-18T10:07:24.930Z"
+    }
+}

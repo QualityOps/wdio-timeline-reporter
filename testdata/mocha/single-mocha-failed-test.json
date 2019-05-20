@@ -1,0 +1,64 @@
+{
+   "suite-0-0": {
+     "type": "suite",
+     "start": "2019-05-18T09:07:14.700Z",
+     "_duration": 432,
+     "uid": "suite-0-0",
+     "cid": "0-0",
+     "title": "1",
+     "fullTitle": "1",
+     "tests": [
+       {
+         "type": "test",
+         "start": "2019-05-18T09:07:14.701Z",
+         "_duration": 431,
+         "uid": "test-00-0",
+         "cid": "0-0",
+         "title": "should open",
+         "fullTitle": "1 should open",
+         "output": [],
+         "state": "failed",
+         "screenshots": [],
+         "end": "2019-05-18T09:07:15.132Z",
+         "errors": [
+           {
+             "message": "I hate you",
+             "stack": "Error: I hate you\n    at Context.it (/Users/beni/dev/wdio/test.1.js:8:11)",
+             "type": "Error"
+           }
+         ],
+         "error": {
+           "message": "I hate you",
+           "stack": "Error: I hate you\n    at Context.it (/Users/beni/dev/wdio/test.1.js:8:11)",
+           "type": "Error"
+         }
+       }
+     ],
+     "hooks": [
+       {
+         "type": "hook",
+         "start": "2019-05-18T09:07:14.701Z",
+         "_duration": 0,
+         "uid": "hook-00-0",
+         "cid": "0-0",
+         "title": "\"before each\" hook",
+         "parent": "",
+         "errors": [],
+         "end": "2019-05-18T09:07:14.701Z"
+       },
+       {
+         "type": "hook",
+         "start": "2019-05-18T09:07:15.132Z",
+         "_duration": 0,
+         "uid": "hook-00-1",
+         "cid": "0-0",
+         "title": "\"after each\" hook",
+         "parent": "",
+         "errors": [],
+         "end": "2019-05-18T09:07:15.132Z"
+       }
+     ],
+     "suites": [],
+     "end": "2019-05-18T09:07:15.132Z"
+   }
+}

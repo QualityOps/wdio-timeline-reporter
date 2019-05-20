@@ -1,0 +1,162 @@
+{
+    "1suite1": {
+        "type": "suite",
+        "start": "2019-05-18T10:19:42.788Z",
+        "_duration": 5695,
+        "uid": "1suite1",
+        "cid": "0-0",
+        "title": "1",
+        "tests": [
+            {
+                "type": "test",
+                "start": "2019-05-18T10:19:42.788Z",
+                "_duration": 1924,
+                "uid": "should openspec0",
+                "cid": "0-0",
+                "title": "should open",
+                "output": [],
+                "state": "failed",
+                "screenshots": [],
+                "end": "2019-05-18T10:19:44.712Z",
+                "errors": [
+                    {
+                        "matcherName": "",
+                        "message": "Error: jxdhlgvhjkdxjgkjdg",
+                        "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "error": {
+                    "matcherName": "",
+                    "message": "Error: jxdhlgvhjkdxjgkjdg",
+                    "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                    "passed": false,
+                    "expected": "",
+                    "actual": ""
+                }
+            },
+            {
+                "type": "test",
+                "start": "2019-05-18T10:19:44.724Z",
+                "_duration": 1709,
+                "uid": "should open 2spec1",
+                "cid": "0-0",
+                "title": "should open 2",
+                "output": [],
+                "state": "failed",
+                "screenshots": [],
+                "end": "2019-05-18T10:19:46.433Z",
+                "errors": [
+                    {
+                        "matcherName": "",
+                        "message": "Error: jxdhlgvhjkdxjgkjdg",
+                        "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "error": {
+                    "matcherName": "",
+                    "message": "Error: jxdhlgvhjkdxjgkjdg",
+                    "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                    "passed": false,
+                    "expected": "",
+                    "actual": ""
+                }
+            }
+        ],
+        "hooks": [],
+        "suites": [
+            {
+                "type": "suite",
+                "start": "2019-05-18T10:19:46.433Z",
+                "_duration": 2050,
+                "uid": "inner 1suite2",
+                "cid": "0-0",
+                "title": "inner 1",
+                "tests": [
+                    {
+                        "type": "test",
+                        "start": "2019-05-18T10:19:46.433Z",
+                        "_duration": 2040,
+                        "uid": "should open 3spec2",
+                        "cid": "0-0",
+                        "title": "should open 3",
+                        "output": [],
+                        "state": "failed",
+                        "screenshots": [],
+                        "end": "2019-05-18T10:19:48.473Z",
+                        "errors": [
+                            {
+                                "matcherName": "",
+                                "message": "Error: jxdhlgvhjkdxjgkjdg",
+                                "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                                "passed": false,
+                                "expected": "",
+                                "actual": ""
+                            }
+                        ],
+                        "error": {
+                            "matcherName": "",
+                            "message": "Error: jxdhlgvhjkdxjgkjdg",
+                            "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                            "passed": false,
+                            "expected": "",
+                            "actual": ""
+                        }
+                    }
+                ],
+                "hooks": [],
+                "suites": [],
+                "end": "2019-05-18T10:19:48.483Z"
+            }
+        ],
+        "end": "2019-05-18T10:19:48.483Z"
+    },
+    "inner 1suite2": {
+        "type": "suite",
+        "start": "2019-05-18T10:19:46.433Z",
+        "_duration": 2050,
+        "uid": "inner 1suite2",
+        "cid": "0-0",
+        "title": "inner 1",
+        "tests": [
+            {
+                "type": "test",
+                "start": "2019-05-18T10:19:46.433Z",
+                "_duration": 2040,
+                "uid": "should open 3spec2",
+                "cid": "0-0",
+                "title": "should open 3",
+                "output": [],
+                "state": "failed",
+                "screenshots": [],
+                "end": "2019-05-18T10:19:48.473Z",
+                "errors": [
+                    {
+                        "matcherName": "",
+                        "message": "Error: jxdhlgvhjkdxjgkjdg",
+                        "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "error": {
+                    "matcherName": "",
+                    "message": "Error: jxdhlgvhjkdxjgkjdg",
+                    "stack": "Error: jxdhlgvhjkdxjgkjdg\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                    "passed": false,
+                    "expected": "",
+                    "actual": ""
+                }
+            }
+        ],
+        "hooks": [],
+        "suites": [],
+        "end": "2019-05-18T10:19:48.483Z"
+    }
+}
