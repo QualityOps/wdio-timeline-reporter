@@ -6,6 +6,7 @@ export interface Test {
   state?: 'passed' | 'failed' | 'skipped' | 'unknown';
   screenshots?: string[];
   error?: Error;
+  context?: any;
 }
 
 export interface Error {
@@ -26,6 +27,7 @@ export const MapTests = suiteTests => {
     testCase.duration = test._duration;
     testCase.state = test.state;
     testCase.screenshots = test.screenshots;
+    testCase.context = test.context;
 
     if (test.error) {
       testCase.error = {};

@@ -103,7 +103,7 @@ export class TimelineService {
     if (resize) {
       console.log(
         `TIMELINE:ScreenshotService: Attempting to resize ${
-          screenshots.length
+        screenshots.length
         } images`
       );
       quality =
@@ -112,8 +112,8 @@ export class TimelineService {
           : 70;
       reductionRatio =
         Number.isInteger(reductionRatio) &&
-        reductionRatio > 0 &&
-        reductionRatio <= 5
+          reductionRatio > 0 &&
+          reductionRatio <= 5
           ? Math.round(reductionRatio)
           : 1;
       const promises = screenshots.map(filePath =>
@@ -169,7 +169,7 @@ export class TimelineService {
             const cyan = '\x1b[35m';
             console.log(
               `${cyan}--------\n${cyan}TIMELINE REPORTER: Created ${
-                this.resolvedOutputDir
+              this.resolvedOutputDir
               }/${this.reporterOptions.fileName}\n${cyan}--------`
             );
           })
@@ -178,6 +178,12 @@ export class TimelineService {
           })
       );
     }
+  }
+
+  getBrowserNameAndCombo(capabilities) {
+    const name = capabilities.browserName || 'unknown browser name';
+    const version = capabilities.browserVersion || capabilities.version || 'unknown browser version';
+    return `${name} ${version}`;
   }
 
   generateTestResults(results) {
@@ -215,16 +221,14 @@ export class TimelineService {
         end: result.end,
         duration: result.duration,
         filename: result.specs[0],
-        browser: `${result.capabilities.browserName} ${result.capabilities
-          .version || 'unknown'}`,
+        browser: this.getBrowserNameAndCombo(result.capabilities),
         suites: result.suites.map(suite => ({
           title: suite.title,
           duration: suite.duration,
           start: suite.start,
           end: suite.end,
           tests: suite.tests.map(test => ({
-            browser: `${result.capabilities.browserName} ${result.capabilities
-              .version || 'unknown'}`,
+            browser: this.getBrowserNameAndCombo(result.capabilities),
             title: test.title,
             start: test.start,
             end: test.end,
@@ -232,6 +236,7 @@ export class TimelineService {
             state: test.state,
             screenshots: test.screenshots || [],
             error: test.error,
+            context: test.context,
             embedImages: this.reporterOptions.embedImages
           }))
         }))

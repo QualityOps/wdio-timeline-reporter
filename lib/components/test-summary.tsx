@@ -17,11 +17,10 @@ const TestSummary = props => {
       <div className="column is-half">
         <table className="table is-striped is-fullwidth is-bordered">
           {/* <tr>
-            <td>Browser:</td>
+            <td>Browser: </td>
             <td>
-              {test.browser}{' '}
               <i className={`fab ${getBrowserFontIconClass(test.browser)}`} />
-            </td>
+            </td> {test.browser}
           </tr> */}
           <tr>
             <td>Duration:</td>

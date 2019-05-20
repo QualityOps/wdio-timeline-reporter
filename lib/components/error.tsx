@@ -5,7 +5,7 @@ const Error = props => {
   const failedAndErrorMessageAvailable = state === 'failed' && error;
   return failedAndErrorMessageAvailable ? (
     <details>
-      <summary>ERROR LOG</summary>
+      <summary className="subtitle has-text-danger">Error Log</summary>
       <table className="table is-striped is-bordered is-fullwidth">
         {!!error.type && (
           <tr>

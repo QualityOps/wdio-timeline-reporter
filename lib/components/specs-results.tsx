@@ -16,10 +16,10 @@ const SpecsResults = props => {
           {humanizeDuration(spec.duration, { round: true })}
         </h4>
         <h4 className="title is-4">
-          <span className="has-text-grey-light">Browser:</span> {spec.browser}{' '}
-          <span className="has-text-info">
+          <span className="has-text-grey-light">Browser: </span>
+          <span className="has-text-grey-light">
             <i className={`fab ${getBrowserFontIconClass(spec.browser)}`} />
-          </span>
+          </span> {spec.browser}
         </h4>
         <SuiteResults suites={spec.suites} />
       </div>

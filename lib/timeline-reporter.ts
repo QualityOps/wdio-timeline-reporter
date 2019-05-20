@@ -40,9 +40,10 @@ class TimelineReporter extends WDIOReporter {
       throw new Error('Set outputDir');
     }
     const mergedOptions = deepMerge(
+      // default
       {
-        outputDir: './output/.timeline',
-        fileName: 'timeline-reporter.html',
+        outputDir: './.timeline',
+        fileName: 'timeline-report.html',
         embedImages: false,
         images: {
           quality: 80,
@@ -55,6 +56,7 @@ class TimelineReporter extends WDIOReporter {
     );
     super(options);
     this.reporterOptions = mergedOptions;
+    this.registerListeners();
   }
 
   onTestStart(test) {
@@ -121,6 +123,28 @@ class TimelineReporter extends WDIOReporter {
     }
 
     return resultSet;
+  }
+
+  private registerListeners() {
+    // @ts-ignore
+    process.on('timeline:addContext', this.addSomeContext.bind(this));
+  }
+
+  addSomeContext(object) {
+    const { context } = object;
+    if (this.test) {
+      this.test.context = this.test.context || [];
+      this.test.context.push(context);
+    }
+  }
+
+  static addContext(context) {
+    TimelineReporter.tellReporter('timeline:addContext', { context });
+  }
+
+  private static tellReporter(event, msg = {}) {
+    // @ts-ignore
+    process.emit(event, msg);
   }
 }
 
