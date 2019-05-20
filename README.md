@@ -73,7 +73,7 @@ If you wish to override the default reporter configuration add a reporterOptions
 4. Object options for image manipulation
 5. Set JPEG quality. Only relevant if ```resize``` option is ```true```. The smaller the value, the smaller image size and quality would be. Default value is ```70```. Max value allowed is ```100```
 6. Resize image. Default value is ```false```
-7. value to decrease the total number of pixels by. Only relevant if ```resize``` option is true. Defaults to ```1``` Valid values ``1 - 5```
+7. value to decrease the total number of pixels by. Only relevant if ```resize``` option is true. Defaults to ```1``` Valid values ```1 - 5```
 8. how often to take screenshots. Supported values are ```on:error```, ```before:click```, ```none```. Defaults to ```none```. ```before:click``` is a great option for creating a timeline of screenshots of app under test.
 
 
