@@ -49,27 +49,27 @@ const cssStyle = `
         padding-top: 14px;
     }
 
-    #results.passed .test.fail {
+    #results.passed .test.failed {
         display: none;
     }
     
-    #results.passed .test.pending {
+    #results.passed .test.skipped {
         display: none;
     }
     
-    #results.skipped .test.pass {
+    #results.skipped .test.passed {
         display: none;
     }
     
-    #results.skipped .test.fail {
+    #results.skipped .test.failed {
         display: none;
     }
     
-    #results.failed .test.pending {
+    #results.failed .test.skipped {
         display: none;
     }
     
-    #results.failed .test.pass {
+    #results.failed .test.passed {
         display: none;
     }
 
@@ -90,15 +90,14 @@ const cssStyle = `
     }
 `;
 
-
 const javascript = `
     const imgs = document.querySelectorAll('.screenshot-img');
     const modalEl = document.querySelector('.modal');
     const modalImgEl = document.querySelector('#show-me');
     const allTests = document.querySelectorAll('.test');
-    const passedTests = document.querySelectorAll('.test.pass');
-    const failedTests = document.querySelectorAll('.test.fail');
-    const skippedTests = document.querySelectorAll('.test.pending');
+    const passedTests = document.querySelectorAll('.test.passed');
+    const failedTests = document.querySelectorAll('.test.failed');
+    const skippedTests = document.querySelectorAll('.test.skipped');
     const filterButtons = document.querySelectorAll("#filter span");
 
     // Register onClick listeners on thumbnails

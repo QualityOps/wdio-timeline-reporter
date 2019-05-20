@@ -1,0 +1,39 @@
+{
+   "suite-0-0": {
+     "type": "suite",
+     "start": "2019-05-18T09:05:00.962Z",
+     "_duration": 2,
+     "uid": "suite-0-0",
+     "cid": "0-0",
+     "title": "1",
+     "fullTitle": "1",
+     "tests": [],
+     "hooks": [
+       {
+         "type": "hook",
+         "start": "2019-05-18T09:05:00.962Z",
+         "_duration": 1,
+         "uid": "hook-00-0",
+         "cid": "0-0",
+         "title": "\"before all\" hook",
+         "parent": "1",
+         "errors": [
+           {
+             "message": "I hate you",
+             "stack": "Error: I hate you\n    at Context.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+             "type": "Error"
+           }
+         ],
+         "error": {
+           "message": "I hate you",
+           "stack": "Error: I hate you\n    at Context.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+           "type": "Error"
+         },
+         "state": "failed",
+         "end": "2019-05-18T09:05:00.963Z"
+       }
+     ],
+     "suites": [],
+     "end": "2019-05-18T09:05:00.964Z"
+   }
+}

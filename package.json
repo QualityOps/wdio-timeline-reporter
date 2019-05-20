@@ -1,16 +1,16 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "A WebdriverIO reporter. Creates a simple HTML report after test runs",
   "main": "build/timeline-reporter.js",
   "scripts": {
     "clean": "rimraf ./build",
-    "build": "babel lib --out-dir build",
+    "build": "npm run clean && tsc",
     "release": "np patch",
     "release:patch": "npm run build && np patch",
     "release:minor": "npm run build && np minor",
     "release:major": "npm run build && np major",
-    "test": "mocha --require babel-register ./tests/*.js",
+    "test": "mocha ./tests/*.ts",
     "prepublish": "npm prune"
   },
   "directories": {
@@ -36,21 +36,22 @@
   "dependencies": {
     "@wdio/logger": "^5.8.0",
     "@wdio/reporter": "^5.7.8",
-    "base64-img": "^1.0.4",
-    "humanize-duration": "^3.15.1",
-    "jimp": "^0.5.0",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "humanize-duration": "^3.18.0",
+    "jimp": "^0.6.4",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
   },
   "devDependencies": {
+    "@types/humanize-duration": "^3.18.0",
+    "@types/node": "^12.0.2",
+    "@types/react": "^16.7.6",
+    "@types/react-dom": "^16.0.9",
     "chai": "^4.1.2",
     "circular-json": "^0.5.7",
     "mocha": "^5.2.0",
     "np": "^3.0.4",
     "rimraf": "^2.6.2",
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1"
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
   }
 }

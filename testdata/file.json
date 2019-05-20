@@ -1,0 +1,81 @@
+{
+    "summary": {
+        "passed": 3,
+        "failed": 1,
+        "skipped": 0,
+        "total": 4,
+        "unknown": 0,
+        "duration": "4 seconds",
+        "specs": [
+            {
+                "start": "2019-05-18T11:32:13.989Z",
+                "end": "2019-05-18T11:32:18.281Z",
+                "duration": "4 seconds",
+                "filename": "/Users/beni/dev/wdio/test.1.js",
+                "suites": [
+                    {
+                        "name": "outer 1",
+                        "duration": "4 seconds",
+                        "start": "2019-05-18T11:32:13.998Z",
+                        "end": "2019-05-18T11:32:18.224Z",
+                        "tests": [
+                            {
+                                "browser": "chrome 73.0.3683.75",
+                                "name": "should open",
+                                "start": "2019-05-18T11:32:13.998Z",
+                                "end": "2019-05-18T11:32:15.451Z",
+                                "duration": "1 second",
+                                "state": "passed",
+                                "screenshots": [
+                                    "/Users/beni/dev/wdio/output/.timeline/file-1558179135443.png"
+                                ]
+                            },
+                            {
+                                "browser": "chrome 73.0.3683.75",
+                                "name": "should open 2",
+                                "start": "2019-05-18T11:32:15.452Z",
+                                "end": "2019-05-18T11:32:16.767Z",
+                                "duration": "1 second",
+                                "state": "passed",
+                                "screenshots": [
+                                    "/Users/beni/dev/wdio/output/.timeline/file-1558179136762.png"
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "inner 1",
+                        "duration": "1 second",
+                        "start": "2019-05-18T11:32:16.778Z",
+                        "end": "2019-05-18T11:32:18.224Z",
+                        "tests": [
+                            {
+                                "browser": "chrome 73.0.3683.75",
+                                "name": "should open 3",
+                                "start": "2019-05-18T11:32:16.778Z",
+                                "end": "2019-05-18T11:32:18.213Z",
+                                "duration": "1 second",
+                                "state": "passed",
+                                "screenshots": [
+                                    "/Users/beni/dev/wdio/output/.timeline/file-1558179138209.png"
+                                ]
+                            },
+                            {
+                                "browser": "chrome 73.0.3683.75",
+                                "name": "should open 4",
+                                "start": "2019-05-18T11:32:18.213Z",
+                                "end": "2019-05-18T11:32:18.224Z",
+                                "duration": "0 seconds",
+                                "state": "failed",
+                                "screenshots": [],
+                                "errorType": "Error",
+                                "error": "Inner error",
+                                "standardError": "Error: Inner error\n    at Context.<anonymous> (/Users/beni/dev/wdio/test.1.js:21:15)"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

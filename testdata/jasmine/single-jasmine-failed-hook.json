@@ -1,0 +1,45 @@
+{
+    "1suite1": {
+        "type": "suite",
+        "start": "2019-05-18T10:11:06.031Z",
+        "_duration": 4267,
+        "uid": "1suite1",
+        "cid": "0-0",
+        "title": "1",
+        "tests": [
+            {
+                "type": "test",
+                "start": "2019-05-18T10:11:06.032Z",
+                "_duration": 4255,
+                "uid": "should openspec0",
+                "cid": "0-0",
+                "title": "should open",
+                "output": [],
+                "state": "failed",
+                "screenshots": [],
+                "end": "2019-05-18T10:11:10.287Z",
+                "errors": [
+                    {
+                        "matcherName": "",
+                        "message": "Error: I hate you",
+                        "stack": "Error: I hate you\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                        "passed": false,
+                        "expected": "",
+                        "actual": ""
+                    }
+                ],
+                "error": {
+                    "matcherName": "",
+                    "message": "Error: I hate you",
+                    "stack": "Error: I hate you\n    at UserContext.<anonymous> (/Users/beni/dev/wdio/test.1.js:3:11)",
+                    "passed": false,
+                    "expected": "",
+                    "actual": ""
+                }
+            }
+        ],
+        "hooks": [],
+        "suites": [],
+        "end": "2019-05-18T10:11:10.298Z"
+    }
+}

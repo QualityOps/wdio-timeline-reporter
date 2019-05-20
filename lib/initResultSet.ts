@@ -1,7 +1,27 @@
-const humanizeDuration = require('humanize-duration');
+export interface State {
+  passed: number;
+  failed: number;
+  skipped: number;
+}
 
-module.exports = function(runner) {
-  let resultSet = {};
+export interface ResultSet {
+  start?: string;
+  end?: string;
+  capabilities?: {};
+  host?: string;
+  port?: any;
+  baseUrl?: string;
+  waitForTimeout?: any;
+  framework?: string;
+  mochaOpts?: string;
+  duration?: number;
+  suites?: any[];
+  specs?: any[];
+  state?: State;
+}
+
+export const initResultSet = (runner: any) => {
+  let resultSet: ResultSet = {};
 
   resultSet.start = runner.start;
   resultSet.end = runner.end;
@@ -12,7 +32,7 @@ module.exports = function(runner) {
   resultSet.waitForTimeout = runner.config.waitForTimeout;
   resultSet.framework = runner.config.framework;
   resultSet.mochaOpts = runner.config.mochaOpts;
-  resultSet.duration = humanizeDuration(runner.config.duration);
+  resultSet.duration = runner.duration;
   resultSet.suites = [];
   resultSet.specs = [];
   resultSet.state = { passed: 0, failed: 0, skipped: 0 };
