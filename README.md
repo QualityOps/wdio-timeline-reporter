@@ -49,6 +49,8 @@ A dependency will be added to your `package.json`
  Also import and add ```TimelineService``` from wdio-timeline-reporter. 
  
  Service is mandatory to combine reports and create html as reporters are now initialised per runner instance in webdriverio 5. [See open discussion on webdriverio](https://github.com/webdriverio/webdriverio/issues/3780)
+ 
+ The TimelineService can also manage taking of screenshots during tests execution. You have the option to reduce the size and quality of the images and to embed the images into the report as base64. These are configurable using the [reporter options.](#reporter-options)
 
 ```js
 // wdio.conf.js
@@ -78,8 +80,7 @@ If you wish to override the default reporter configuration add a reporterOptions
 | 7.    | value to decrease the total number of pixels by. Only relevant if ```resize``` option is true. Defaults to ```1``` Valid values ```1 - 5```                                                                                |
 | 8.    | how often to take screenshots. Supported values are ```on:error```, ```before:click```, ```none```. Defaults to ```none```. ```before:click``` is a great option for creating a timeline of screenshots of app under test. |
 
-
-### Add additional information to test context
+### Add Additional information to test context
 It is possible to add additional information to a test using the `addContext` static method. This can be useful for adding important information that could help in debugging failed tests for example a user created during the test run with a dynamic username
 
 #### Basic usage
