@@ -18,6 +18,7 @@ export interface ReporterOptions {
   embedImages?: boolean;
   images?: Images;
   screenshotStrategy?: string;
+  stdout?: boolean;
 }
 
 interface TestSuite {
@@ -34,15 +35,17 @@ class TimelineReporter extends WDIOReporter {
   reporterOptions: ReporterOptions;
   suites: any;
 
-  constructor(options) {
-    options = Object.assign(options, { stdout: false });
+  constructor(options?: ReporterOptions) {
+    if (!options) {
+      throw new Error('Set timeline reporter options object');
+    }
+    options = { ...options, stdout: false };
     if (!options.outputDir) {
-      throw new Error('Set outputDir');
+      throw new Error('Set outputDir on reporter options object');
     }
     const mergedOptions = deepMerge(
       // default
       {
-        outputDir: './.timeline',
         fileName: 'timeline-report.html',
         embedImages: false,
         images: {

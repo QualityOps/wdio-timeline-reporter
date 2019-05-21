@@ -21,22 +21,45 @@ const ON_ERROR = 'on:error';
 
 declare var browser: any;
 
+type WdioReporter = string | Array<any>;
+interface WdioConfiguration {
+  reporters: WdioReporter[];
+}
+
 export class TimelineService {
-  reporterOptions: ReporterOptions;
-  resolvedOutputDir: string;
-  changeLogFile: string;
+  public reporterOptions: ReporterOptions;
+  public resolvedOutputDir: string;
+  public changeLogFile: string;
 
-  constructor() {
-    // this.reporterOptions = {};
-    // this.resolvedOutputDir = undefined;
-    // this.changeLogFile = undefined;
-  }
-
-  setReporterOptions(config) {
-    const timeline = config.reporters.filter(
+  setReporterOptions(config: WdioConfiguration) {
+    const timelineFilter = config.reporters.filter(
       item => Array.isArray(item) && item[0] === 'timeline'
     );
-    this.reporterOptions = timeline[0][1];
+    if (timelineFilter.length === 0) {
+      throw new Error(
+        `Add timeline to reporters in wdio config: 
+            reporters: [[timeline]]
+        `
+      );
+    }
+    const timeline = timelineFilter[0];
+    if (timeline.length !== 2 || typeof timeline[1] !== 'object') {
+      throw new Error(
+        `Add reporter options object to timeline reporter: 
+            reporters: [[timeline, {}]]
+        `
+      );
+    }
+    if (!timeline[1].outputDir) {
+      throw new Error(
+        `Set outputDir on reporter options object: 
+            reporters: [[timeline, {
+              outputDir: 'desired_folder'
+            }]]
+        `
+      );
+    }
+    this.reporterOptions = timeline[1];
     this.resolvedOutputDir = resolve(this.reporterOptions.outputDir);
   }
 
@@ -99,11 +122,11 @@ export class TimelineService {
   }
 
   async resize(screenshots: string[]) {
-    let { resize, quality, reductionRatio } = this.reporterOptions.images;
-    if (resize) {
+    if (this.reporterOptions.images && this.reporterOptions.images.resize) {
+      let { quality, reductionRatio } = this.reporterOptions.images;
       console.log(
         `TIMELINE:ScreenshotService: Attempting to resize ${
-        screenshots.length
+          screenshots.length
         } images`
       );
       quality =
@@ -112,14 +135,14 @@ export class TimelineService {
           : 70;
       reductionRatio =
         Number.isInteger(reductionRatio) &&
-          reductionRatio > 0 &&
-          reductionRatio <= 5
+        reductionRatio > 0 &&
+        reductionRatio <= 5
           ? Math.round(reductionRatio)
           : 1;
       const promises = screenshots.map(filePath =>
         waitForFileExistsAndResize(filePath, quality, reductionRatio)
       );
-      await Promise.all(promises);
+      return Promise.all(promises);
     }
     return Promise.all([]);
   }
@@ -161,7 +184,8 @@ export class TimelineService {
         })
           .then(finalHtml =>
             writeFilePromiseSync(
-              `${this.resolvedOutputDir}/${this.reporterOptions.fileName}`,
+              `${this.resolvedOutputDir}/${this.reporterOptions.fileName ||
+                'timeline-report.html'}`,
               finalHtml
             )
           )
@@ -169,7 +193,7 @@ export class TimelineService {
             const cyan = '\x1b[35m';
             console.log(
               `${cyan}--------\n${cyan}TIMELINE REPORTER: Created ${
-              this.resolvedOutputDir
+                this.resolvedOutputDir
               }/${this.reporterOptions.fileName}\n${cyan}--------`
             );
           })
@@ -182,7 +206,10 @@ export class TimelineService {
 
   getBrowserNameAndCombo(capabilities) {
     const name = capabilities.browserName || 'unknown browser name';
-    const version = capabilities.browserVersion || capabilities.version || 'unknown browser version';
+    const version =
+      capabilities.browserVersion ||
+      capabilities.version ||
+      'unknown browser version';
     return `${name} ${version}`;
   }
 
