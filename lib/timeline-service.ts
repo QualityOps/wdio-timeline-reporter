@@ -147,6 +147,11 @@ export class TimelineService {
     return Promise.all([]);
   }
 
+  getFileName() {
+    return `${this.resolvedOutputDir}/${this.reporterOptions.fileName ||
+      'timeline-report.html'}`;
+  }
+
   onComplete() {
     const folderAndChangeLogFileExists =
       existsSync(this.resolvedOutputDir) && existsSync(this.changeLogFile);
@@ -183,18 +188,12 @@ export class TimelineService {
           resolve(finalHtml);
         })
           .then(finalHtml =>
-            writeFilePromiseSync(
-              `${this.resolvedOutputDir}/${this.reporterOptions.fileName ||
-                'timeline-report.html'}`,
-              finalHtml
-            )
+            writeFilePromiseSync(this.getFileName(), finalHtml)
           )
           .then(() => {
             const cyan = '\x1b[35m';
             console.log(
-              `${cyan}--------\n${cyan}TIMELINE REPORTER: Created ${
-                this.resolvedOutputDir
-              }/${this.reporterOptions.fileName}\n${cyan}--------`
+              `${cyan}--------\n${cyan}TIMELINE REPORTER: Created ${this.getFileName()}\n${cyan}--------`
             );
           })
           .catch(error => {

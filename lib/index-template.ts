@@ -57,11 +57,19 @@ const cssStyle = `
         display: none;
     }
     
+    #results.passed .test.pending {
+        display: none;
+    }
+    
     #results.skipped .test.passed {
         display: none;
     }
     
     #results.skipped .test.failed {
+        display: none;
+    }
+
+    #results.skipped .test.pending {
         display: none;
     }
     
@@ -70,6 +78,10 @@ const cssStyle = `
     }
     
     #results.failed .test.passed {
+        display: none;
+    }
+
+    #results.failed .test.pending {
         display: none;
     }
 

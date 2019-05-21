@@ -8,6 +8,7 @@ import { makeId, LinkableHeaderH5 } from './linkable-header';
 
 const TestTitle = props => {
   const stateClassnameAndMessage = {
+    pending: { span: 'has-text-warning', icon: 'fa-question' },
     skipped: { span: 'has-text-warning', icon: 'fa-forward' },
     passed: { span: 'has-text-primary', icon: 'fa-check-square' },
     failed: { span: 'has-text-danger', icon: 'fa-ban' },
@@ -32,6 +33,12 @@ const TestsResults = props => {
         <LinkableHeaderH5 level={5} id={id}>
           <TestTitle state={test.state} /> {test.title}
         </LinkableHeaderH5>
+        {test.state === 'pending' ? (
+          <span className="tag is-warning" style={{ marginBottom: '18px' }}>
+            Failed mocha test configured to retry. Check spec result for final
+            test run
+          </span>
+        ) : null}
         <TestSummary test={test} />
         <Warning state={test.state} />
         <ImagesContainer test={test} />
