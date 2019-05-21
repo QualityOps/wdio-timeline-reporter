@@ -59,7 +59,7 @@ exports.config = {
   // ...
   reporters: [['timeline']],
   // ...
-  services: [TimelineService],
+  services: [[TimelineService]],
 };
 ```
 
