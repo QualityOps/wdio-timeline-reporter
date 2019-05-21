@@ -1,6 +1,6 @@
 {
   "name": "wdio-timeline-reporter",
-  "version": "5.0.2",
+  "version": "5.0.3",
   "description": "A WebdriverIO reporter. Creates a simple HTML report after test runs",
   "main": "build/timeline-reporter.js",
   "scripts": {
