@@ -14,7 +14,7 @@ const TestTitle = props => {
     unknown: { span: 'has-text-warning', icon: 'fa-question-circle' }
   };
   const { state } = props;
-  const classNameAndFieldText = stateClassnameAndMessage[state];
+  const classNameAndFieldText = stateClassnameAndMessage[state || 'unknown'];
   return (
     <span className={`icon ${classNameAndFieldText.span}`}>
       <i className={`fas ${classNameAndFieldText.icon}`} />
