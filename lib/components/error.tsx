@@ -22,7 +22,11 @@ const Error = props => {
         {!!error.stack && (
           <tr>
             <td>Stack:</td>
-            <td>{error.stack.replace(/<|>/g, '')}</td>
+            <td style={{ display: 'grid' }}>
+              <pre className="stack has-background-grey-dark has-text-white-bis">
+                {error.stack.replace(/<|>/g, '')}
+              </pre>
+            </td>
           </tr>
         )}
       </table>

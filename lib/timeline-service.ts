@@ -30,6 +30,8 @@ export class TimelineService {
   public reporterOptions: ReporterOptions;
   public resolvedOutputDir: string;
   public changeLogFile: string;
+  public startTime: number;
+  public stopTime: number;
 
   setReporterOptions(config: WdioConfiguration) {
     const timelineFilter = config.reporters.filter(
@@ -64,6 +66,7 @@ export class TimelineService {
   }
 
   onPrepare(config) {
+    this.startTime = Date.now();
     this.setReporterOptions(config);
 
     try {
@@ -213,6 +216,7 @@ export class TimelineService {
   }
 
   generateTestResults(results) {
+    this.stopTime = Date.now();
     const passed = results.reduce(
       (accumulator, result) => result.state.passed + accumulator,
       0
@@ -226,10 +230,7 @@ export class TimelineService {
       0
     );
 
-    const totalDuration = results.reduce(
-      (accumulator, result) => result.duration + accumulator,
-      0
-    );
+    const totalDuration = this.stopTime - this.startTime;
     const total = passed + failed + skipped;
 
     let unknown = 0;
