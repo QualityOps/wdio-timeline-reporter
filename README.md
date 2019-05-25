@@ -119,3 +119,7 @@ describe('Suite', function() {
   });
 });
 ```
+
+## Acknowledgement
+
+Would love to give a shout out to the authors and maintainers of [wdio-json-reporter](https://github.com/fijijavis/wdio-json-reporter) Going through their v5 solution helped speed up my work
