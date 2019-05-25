@@ -4,7 +4,6 @@ import humanizeDuration from 'humanize-duration';
 export const getBrowserFontIconClass = browser => {
   var supported = ['chrome', 'ie', 'edge', 'firefox'];
   var filtered = supported.filter(item => browser.includes(item));
-  console.log('browser is', browser, filtered);
   if (filtered.length > 0) {
     return 'fa-' + filtered[0];
   }
