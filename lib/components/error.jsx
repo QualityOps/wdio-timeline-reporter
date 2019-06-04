@@ -16,13 +16,13 @@ const Error = props => {
                 {!!error.message &&
                     <tr>
                         <td>Message:</td>
-                        <td>{error.message.replace(/<|>/g, '')}</td>
+                        <td><pre>{error.message.replace(/<|>/g, '')}</pre></td>
                     </tr>
                 }
                 {!!error.stack &&
                     <tr>
                         <td>Stack:</td>
-                        <td>{error.stack.replace(/<|>/g, '')}</td>
+                        <td><pre>{error.stack.replace(/<|>/g, '')}</pre></td>
                     </tr>
                 }
             </table>
