@@ -17,7 +17,9 @@ const Error = props => {
                     <tr>
                         <td>Message:</td>
                         <td style={{ display: 'grid' }}>
-                            <pre>{error.message.replace(/<|>/g, '')}</pre>
+                            <pre className="stack has-background-grey-dark has-text-white-bis">
+                                {error.message.replace(/<|>/g, '')}
+                            </pre>
                         </td>
                     </tr>
                 }
@@ -25,7 +27,9 @@ const Error = props => {
                     <tr>
                         <td>Stack:</td>
                         <td style={{ display: 'grid' }}>
-                            <pre>{error.stack.replace(/<|>/g, '')}</pre>
+                            <pre className="stack has-background-grey-dark has-text-white-bis">
+                                {error.stack.replace(/<|>/g, '')}
+                            </pre>
                         </td>
                     </tr>
                 }
