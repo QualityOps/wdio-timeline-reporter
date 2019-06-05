@@ -6,20 +6,20 @@
 
 ![example.png](./images/example.png)
 
-## Why use it?
+## Why
 
-Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok. Quite a few other use cases out there...
+Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok.
 
 #### Features include:
 
-1. Works great with Mocha and Jasmine frameworks. Also works with Cucumber but every step will be reported as a test
-2. Loud Summary of the Test Results.
-3. Detail of each test run including all screenshots captured during test execution.
-4. Test Results filtering. Great for focusing on failed tests
-5. Error stack trace attached to test.
-6. Ability to add additional information to test at runtime.
-7. No post processing required. On completion of wdio test process, a static html report file will get generated.
-8. Timeline service to manage the taking of screenshots including resizing of the images.
+- Works great with Mocha and Jasmine frameworks. Also works with Cucumber but every step will be reported as a test
+- Loud Summary of the Test Results.
+- Detail of each test run including all screenshots captured during test execution.
+- Test Results filtering. Great for focusing on failed tests
+- Error stack trace attached to test.
+- Ability to add additional information to test at runtime.
+- No post processing required. On completion of wdio test process, a static html report file will get generated.
+- Timeline service to manage the taking of screenshots including resizing of the images.
 
 An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/master/images/example-timeline-report.html)
 
@@ -38,7 +38,7 @@ A dependency will be added to your `package.json`
 ```json
 {
   "dependencies": {
-    "wdio-timeline-reporter": "^5.0.0"
+    "wdio-timeline-reporter": "^5.0.10"
   }
 }
 ```
