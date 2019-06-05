@@ -7,7 +7,7 @@ Wdio Timeline Reporter
 ![example.png](./images/example.png)
 
 ## Why? 
-Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok.
+Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice visual timeline of events you can look back at to further verify everything looks ok.
 
 #### Features include:
 1. Works great with Mocha and Jasmine frameworks. (Also works with Cucumber but every step will be reported as a test)
