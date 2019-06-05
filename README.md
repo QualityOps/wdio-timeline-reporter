@@ -6,18 +6,18 @@ Wdio Timeline Reporter
 
 ![example.png](./images/example.png)
 
-## Why use it? 
-Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok. Quite a few other use cases out there...
+## Why? 
+Because we spend a lot of time debugging failing tests switching from terminal output to viewing error screenshots etc. This reporter aggregates all the typical information you will need into one report. Run tests and have a nice timeline of events you can look back at to further verify everything looks ok.
 
 #### Features include:
-1. Works great with Mocha and Jasmine frameworks. Also works with Cucumber but every step will be reported as a test)
+1. Works great with Mocha and Jasmine frameworks. (Also works with Cucumber but every step will be reported as a test)
 2. Loud Summary of the Test Results.
 3. Detail of each test run including all screenshots captured during test execution.
 4. Test Results filtering. Great for focusing on failed tests
 5. Error stack trace attached to test.
 6. Ability to add additional information to test at runtime.
 7. No post processing required. On completion of wdio test process, a static html report file will get generated.
-8. Screenshot service to manage the taking of screenshots including resizing of the images.
+8. Timeline service to manage the taking of screenshots including resizing of the images.
    
 __Note that inbuilt image manipulation capability makes this reporter quite sizeable in comparison to the others__
    
@@ -59,11 +59,11 @@ exports.config = {
 
 The following configuration options are supported:
 
-| option | default | type | description |
-| - | - | - | - |
-| outputDir | ./ | string | directory you want the report html file written to. It defaults to the current working directory |
-| filename | timeline-reporter.html   | string |name of the html file. File has to have html extension or default filename will be used |
-| embedImages | false   | boolean |use this if you want to embed screenshots as base64 to the report. Great option if you wish to archive just one artifact on CI server but be weary of the size the file could be |
+| option      | default                | type    | description                                                                                                                                                                      |
+| ----------- | ---------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| outputDir   | ./                     | string  | directory you want the report html file written to. It defaults to the current working directory                                                                                 |
+| filename    | timeline-reporter.html | string  | name of the html file. File has to have html extension or default filename will be used                                                                                          |
+| embedImages | false                  | boolean | use this if you want to embed screenshots as base64 to the report. Great option if you wish to archive just one artifact on CI server but be weary of the size the file could be |
 
 
 If you wish to override the default configuration add a ```timelineReporter``` object to ```reporterOptions``` in your wdio config as shown below.
@@ -161,8 +161,8 @@ exports.config = {
 ```
 Configuration options are explained below
 
-| option | default | type | description |
-| -- | -- | -- | -- |
-| outputDir | ./ | string | directory where screenshots will be saved. Defaults to working directory |
-| images | ```{ quality: 70, resize: false, reductionRatio: 1 }``` | object (quality and reductionRatio are of type Number and resize is a boolean) | if resize is true, service will use `quality` and `reductionRatio` values to resize the images. Resizing is a great option if you chose to embed your images as base64. Allowed range for `images.quality` are `1 - 100` inclusive and `1 - 5 ` for `images.reductionRatio` |
-| strategy | none | string | `none` will not take any screenshots, `error` will take screenshots only on error, `verbose` will take screenshots before every click |
+| option    | default                                                 | type                                                                           | description                                                                                                                                                                                                                                                                 |
+| --------- | ------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| outputDir | ./                                                      | string                                                                         | directory where screenshots will be saved. Defaults to working directory                                                                                                                                                                                                    |
+| images    | ```{ quality: 70, resize: false, reductionRatio: 1 }``` | object (quality and reductionRatio are of type Number and resize is a boolean) | if resize is true, service will use `quality` and `reductionRatio` values to resize the images. Resizing is a great option if you chose to embed your images as base64. Allowed range for `images.quality` are `1 - 100` inclusive and `1 - 5 ` for `images.reductionRatio` |
+| strategy  | none                                                    | string                                                                         | `none` will not take any screenshots, `error` will take screenshots only on error, `verbose` will take screenshots before every click                                                                                                                                       |
