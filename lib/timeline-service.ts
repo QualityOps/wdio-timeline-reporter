@@ -207,9 +207,12 @@ export class TimelineService {
   }
 
   getBrowserNameAndCombo(capabilities) {
-    const name = capabilities.browserName || 'unknown browser name';
+    const name = capabilities.browserName || 
+          capabilities.deviceName ||
+          'unknown browser name';
     const version =
       capabilities.browserVersion ||
+      capabilities.platformVersion ||
       capabilities.version ||
       'unknown browser version';
     return `${name} ${version}`;
