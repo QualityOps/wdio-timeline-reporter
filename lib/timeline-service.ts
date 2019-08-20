@@ -5,7 +5,8 @@ import {
   watch,
   appendFileSync,
   readFileSync,
-  writeFile
+  writeFile,
+  FSWatcher
 } from 'fs';
 import { resolve, sep, isAbsolute } from 'path';
 import { generateMarkup } from './components/generate-markup';
@@ -32,6 +33,7 @@ export class TimelineService {
   public changeLogFile: string;
   public startTime: number;
   public stopTime: number;
+  public watcher: FSWatcher;
 
   setReporterOptions(config: WdioConfiguration) {
     const timelineFilter = config.reporters.filter(
@@ -83,7 +85,8 @@ export class TimelineService {
       this.changeLogFile = `${this.resolvedOutputDir}/changelog.txt`;
       writeFileSync(this.changeLogFile, '');
 
-      watch(this.resolvedOutputDir, (eventType, filename) => {
+      // close watcher in onComplete
+      this.watcher = watch(this.resolvedOutputDir, (eventType, filename) => {
         if (filename.includes('timeline-reporter')) {
           appendFileSync(this.changeLogFile, `${filename}\n`);
         }
@@ -159,6 +162,9 @@ export class TimelineService {
     const folderAndChangeLogFileExists =
       existsSync(this.resolvedOutputDir) && existsSync(this.changeLogFile);
 
+    // close watcher
+    this.watcher.close();
+
     if (folderAndChangeLogFileExists) {
       const runnerLogFiles = readFileSync(this.changeLogFile, 'utf-8')
         .split('\n')
@@ -207,9 +213,10 @@ export class TimelineService {
   }
 
   getBrowserNameAndCombo(capabilities) {
-    const name = capabilities.browserName || 
-          capabilities.deviceName ||
-          'unknown browser name';
+    const name =
+      capabilities.browserName ||
+      capabilities.deviceName ||
+      'unknown browser name';
     const version =
       capabilities.browserVersion ||
       capabilities.platformVersion ||
