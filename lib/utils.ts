@@ -1,5 +1,6 @@
 import fs from 'fs';
 import Jimp from 'jimp';
+import { parseISO, format } from 'date-fns';
 
 const retry = (promise, args, maxRetries = 3, interval = 500) =>
   new Promise((resolve, reject) => {
@@ -88,4 +89,13 @@ export const deepSearch = (searchTerm: string, obj: any, found = []) => {
     }
   });
   return found;
+};
+
+export const formatDateString = (dateString: string) => {
+  try {
+    const date = parseISO(dateString);
+    return format(date, 'MMMM d, yyyy HH:mm:ss');
+  } catch (ex) {
+    return dateString;
+  }
 };

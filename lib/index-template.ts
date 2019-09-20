@@ -6,6 +6,16 @@ const cssStyle = `
         color: #333;
     }
 
+    .summary {
+        padding-bottom: 14px;
+    }
+
+    .is-selected {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        transition: all .2s ease-in-out;
+        transform: scale(1.05);   
+    }
+
     .test {
         width: 90%;
         margin: 3rem auto;
@@ -110,7 +120,8 @@ const javascript = `
     const passedTests = document.querySelectorAll('.test.passed');
     const failedTests = document.querySelectorAll('.test.failed');
     const skippedTests = document.querySelectorAll('.test.skipped');
-    const filterButtons = document.querySelectorAll("#filter span");
+    const filterButtons = document.querySelectorAll("#filter .notification");
+    const search = document.querySelector("#search");
 
     // Register onClick listeners on thumbnails
     for (let i = 0; i < imgs.length; i++) {
@@ -159,28 +170,12 @@ const javascript = `
             const container = document.querySelector('#results');
             const statusClasses = ['all', 'passed', 'failed', 'skipped'];
             statusClasses.forEach(item => container.classList.remove(item));
-            const status = event.target.dataset.status;
+            const status = filterButtons[i].dataset.status;
             container.classList.add(status);
-            
+
             const isSelected = document.querySelector('#filter .is-selected');
             isSelected.classList.remove('is-selected');
-            const notificationClasses = ['is-primary', 'is-warning', 'is-danger', 'is-link'];
-            notificationClasses.forEach(item => isSelected.classList.remove(item));
-            switch (status) {
-                case 'passed':
-                    event.target.classList.add('is-primary');
-                    break;   
-                case 'skipped':
-                    event.target.classList.add('is-warning');
-                    break;
-                case 'failed':
-                    event.target.classList.add('is-danger');
-                    break ;
-                default:
-                    event.target.classList.add('is-link');
-                    break;
-            }
-            event.target.classList.add('is-selected');
+            filterButtons[i].classList.add('is-selected');
             removeHide();
             hideSuites();
             hideSpecs();
@@ -193,6 +188,29 @@ const javascript = `
         if (isActive) {
             modalEl.classList.remove('is-active');
         }
+    });
+
+    search.addEventListener('keyup', function filter(event) {
+        const filter = event.target.value.toUpperCase();
+        let specs = document.querySelectorAll('[data-box-is="spec"]');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < specs.length; i++) {
+            const txtValue = specs[i].textContent || specs[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                specs[i].style.display = "";
+            } else {
+                specs[i].style.display = "none";
+            }
+        }
+        specs = document.querySelectorAll('[data-box-is="spec"]');
+
+        const visibleSpecs = Array.from(specs)
+            .some(element => element.offsetWidth > 0 && element.offsetHeight > 0);
+
+        const noResults = document.querySelector('#no-results');
+        noResults.style.display = visibleSpecs ? 'none' : 'block';
+  
     });
 `;
 
