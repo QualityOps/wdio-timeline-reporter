@@ -91,10 +91,10 @@ export const deepSearch = (searchTerm: string, obj: any, found = []) => {
   return found;
 };
 
-export const formatDateString = (dateString: string) => {
+export const formatDateString = (dateString: string, locale?: Locale) => {
   try {
     const date = parseISO(dateString);
-    return format(date, 'MMMM d, yyyy HH:mm:ss');
+    return format(date, 'MMMM d, yyyy HH:mm:ss', { locale });
   } catch (ex) {
     return dateString;
   }
