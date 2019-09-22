@@ -38,7 +38,7 @@ A dependency will be added to your `package.json`
 ```json
 {
   "dependencies": {
-    "wdio-timeline-reporter": "^5.0.10"
+    "wdio-timeline-reporter": "^5.1.0"
   }
 }
 ```
