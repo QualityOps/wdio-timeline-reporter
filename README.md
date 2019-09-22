@@ -21,7 +21,7 @@ Because we spend a lot of time debugging failing tests switching from terminal o
    
 __Note that inbuilt image manipulation capability makes this reporter quite sizeable in comparison to the others__
    
-An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/master/images/example-timeline-report.html)  
+An example html report can be found [here](http://htmlpreview.github.io/?https://github.com/QualityOps/wdio-timeline-reporter/blob/v4/images/example-timeline-report.html)  
 
 Instructions on how to install `WebdriverIO` can be found [here](http://webdriver.io/guide/getstarted/install.html).
 
@@ -37,7 +37,7 @@ A dependency will be added to your `package.json`
 ```json
 {
   "dependencies": {
-    "wdio-timeline-reporter": "^2.0.1"
+    "wdio-timeline-reporter": "^4.0.4"
   }
 }
 ```
