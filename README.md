@@ -29,7 +29,7 @@ Instructions on how to install `WebdriverIO` can be found [here](http://webdrive
 ## Installation
 
 ```shell
-npm install --save wdio-timeline-reporter
+npm install --save wdio-timeline-reporter@4
 ```
 
 A dependency will be added to your `package.json`
