@@ -36,6 +36,7 @@
   "dependencies": {
     "@wdio/logger": "^5.8.0",
     "@wdio/reporter": "^5.7.8",
+    "date-fns": "^2.2.1",
     "humanize-duration": "^3.18.0",
     "jimp": "^0.6.4",
     "react": "^16.6.3",
