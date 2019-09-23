@@ -5,9 +5,7 @@ const Modal = () => {
         <div className="modal">
             <div className="modal-background"></div>
             <div className="modal-content">
-                <p className="image">
-                    <img id="show-me" src="#" alt=""></img>
-                </p>
+                <p id="modal-images" className="image"></p>
             </div>
             <button className="modal-close is-large" aria-label="close"></button>
         </div>    

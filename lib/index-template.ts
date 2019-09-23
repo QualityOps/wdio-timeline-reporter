@@ -55,6 +55,12 @@ const cssStyle = `
         text-overflow: elipsis;
     }
 
+    #modal-images img {
+        display: inline;
+        border: solid;
+        border-color: pink;
+    }
+
     #filter {
         padding-top: 14px;
     }
@@ -122,20 +128,31 @@ const javascript = `
     const skippedTests = document.querySelectorAll('.test.skipped');
     const filterButtons = document.querySelectorAll("#filter .notification");
     const search = document.querySelector("#search");
-
+        
     // Register onClick listeners on thumbnails
     for (let i = 0; i < imgs.length; i++) {
         imgs[i].addEventListener('click', function updateModal(event) {
-            modalImgEl.setAttribute('src', event.target.src);
-            if (modalImgEl.naturalWidth / modalImgEl.naturalHeight > 1) {
+            // set the images
+            const parent = event.target.parentNode;
+            const images = parent.querySelectorAll('img');
+            const modalImages = document.querySelector('#modal-images');
+            modalImages.innerHTML = '';
+            for (let i = 0; i < images.length; i++) {
+                modalImages.appendChild(images[i].cloneNode(true));                 
+            }
+            if (images[0].naturalWidth / images[0].naturalHeight > 1) {
                 document.querySelector('.modal-content').setAttribute("style", "width: 90%;");
             } else {
                 document.querySelector('.modal-content').setAttribute("style", "width: 640px");
-            }
+            }  
 
             modalEl.classList.add('is-active');
+
+            const selector = '#modal-images img:nth-child(' + event.target.dataset.count + ')';
+            document.querySelector(selector).scrollIntoView();
         });
     }
+
 
     const removeHide = function() {
         const elements = document.querySelectorAll('.hide');

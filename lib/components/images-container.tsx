@@ -27,6 +27,7 @@ const ImagesContainer = props => {
           return (
             <img
               key={index}
+              data-count={index + 1}
               className="screenshot-img"
               src={makeImageSource(screenshot, test.embedImages)}
             />
