@@ -96,16 +96,6 @@ export class TimelineService {
     }
   }
 
-  takeScreenshot() {
-    try {
-      const filename = Date.now().toString();
-      const filePath = resolve(this.resolvedOutputDir, `${filename}.png`);
-      browser.saveScreenshot(filePath);
-    } catch (e) {
-      console.log(e);
-    }
-  }
-
   beforeSession(config) {
     this.setReporterOptions(config);
   }
@@ -113,17 +103,17 @@ export class TimelineService {
   beforeCommand(commandName) {
     const { screenshotStrategy } = this.reporterOptions;
     if (screenshotStrategy === BEFORE_CLICK && 'click' === commandName) {
-      this.takeScreenshot();
+      browser.takeScreenshot();
     }
   }
 
   afterTest(test) {
     const { screenshotStrategy } = this.reporterOptions;
     if (screenshotStrategy === BEFORE_CLICK) {
-      this.takeScreenshot();
+      browser.takeScreenshot();
     }
     if (screenshotStrategy === ON_ERROR && !test.passed) {
-      this.takeScreenshot();
+      browser.takeScreenshot();
     }
   }
 
