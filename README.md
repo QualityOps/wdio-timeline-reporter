@@ -70,16 +70,16 @@ If you wish to override the default reporter configuration add a reporterOptions
 
 ![reporter-options.png](./images/reporter-options.png)
 
-| index | description                                                                                                                                                                                            |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| 1.    | Directory where html file and screenshots will be created in. Mandatory option                                                                                                                         |
-| 2.    | Name of report html file. Default value is `timeline-report.html`                                                                                                                                      |
-| 3.    | Embed images as base64 in html file. Default value is `false`                                                                                                                                          |
-| 4.    | Object options for image manipulation                                                                                                                                                                  |
-| 5.    | Set JPEG quality. Only relevant if `resize` option is `true`. The smaller the value, the smaller image size and quality would be. Default value is `70`. Max value allowed is `100`                    |
-| 6.    | Resize image. Default value is `false`                                                                                                                                                                 |
-| 7.    | value to decrease the total number of pixels by. Only relevant if `resize` option is true. Defaults to `1` Valid values `1 - 5`                                                                        |
-| 8.    | how often to take screenshots. Supported values are `on:error`, `before:click`, `none`. Defaults to `none`. `before:click` is a great option for creating a timeline of screenshots of app under test. |
+| index | key | description                                                                                                                                                                                            |
+| ----- | ----- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1.    | `outputDir` | Directory where html file and screenshots will be created in. Mandatory option                                                                                                                         |
+| 2.    | `fileName` | Name of report html file. Default value is `timeline-report.html`                                                                                                                                      |
+| 3.    | `embedImages` | Embed images as base64 in html file. Default value is `false`                                                                                                                                          |
+| 4.    | `images` | Object options for image manipulation                                                                                                                                                                  |
+| 5.    | `quality` | Set JPEG quality. Only relevant if `resize` option is `true`. The smaller the value, the smaller image size and quality would be. Default value is `70`. Max value allowed is `100`                    |
+| 6.    | `resize` | Resize image. Default value is `false`                                                                                                                                                                 |
+| 7.    | `reductionRatio` | value to decrease the total number of pixels by. Only relevant if `resize` option is true. Defaults to `1` Valid values `1 - 5`                                                                        |
+| 8.    | `screenshotStrategy` | how often to take screenshots. Supported values are `on:error`, `before:click`, `none`. Defaults to `none`. `before:click` is a great option for creating a timeline of screenshots of app under test. |
 
 ### Add Additional information to test context
 
