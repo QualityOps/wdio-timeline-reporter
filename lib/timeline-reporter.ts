@@ -57,7 +57,14 @@ class TimelineReporter extends WDIOReporter {
       },
       options
     );
-    super(options);
+    // super(options);
+    let superOptions: WDIOReporter.Options = {
+      configFile: null,
+      logFile: null,
+      logLevel: null,
+      stdout: false
+    };
+    super(superOptions);
     this.reporterOptions = mergedOptions;
     this.registerListeners();
   }
@@ -88,8 +95,10 @@ class TimelineReporter extends WDIOReporter {
     }
   }
 
-  onRunnerEnd(runner) {
-    let json = this.prepareJson(runner);
+  // onRunnerEnd(runner) {
+  //   let json = this.prepareJson(runner);
+  onRunnerEnd() {
+    let json = {};
     this.write(JSON.stringify(json, null, 2));
   }
 
