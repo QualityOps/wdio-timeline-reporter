@@ -17,7 +17,7 @@ export interface ReporterOptions {
   fileName?: string;
   embedImages?: boolean;
   images?: Images;
-  screenshotStrategy?: string;
+  screenshotStrategy?: string[];
   stdout?: boolean;
 }
 
@@ -53,7 +53,7 @@ class TimelineReporter extends WDIOReporter {
           resize: false,
           reductionRatio: 2
         },
-        screenshotStrategy: 'none'
+        screenshotStrategy: []
       },
       options
     );

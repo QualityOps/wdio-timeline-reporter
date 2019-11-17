@@ -102,17 +102,17 @@ export class TimelineService {
 
   beforeCommand(commandName) {
     const { screenshotStrategy } = this.reporterOptions;
-    if (screenshotStrategy === BEFORE_CLICK && 'click' === commandName) {
+    if (screenshotStrategy.includes(BEFORE_CLICK) && 'click' === commandName) {
       browser.takeScreenshot();
     }
   }
 
   afterTest(test) {
     const { screenshotStrategy } = this.reporterOptions;
-    if (screenshotStrategy === BEFORE_CLICK) {
+    if (screenshotStrategy.includes(BEFORE_CLICK)) {
       browser.takeScreenshot();
     }
-    if (screenshotStrategy === ON_ERROR && !test.passed) {
+    if (screenshotStrategy.includes(ON_ERROR) && !test.passed) {
       browser.takeScreenshot();
     }
   }
