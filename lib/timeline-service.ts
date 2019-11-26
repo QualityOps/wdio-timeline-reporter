@@ -169,7 +169,7 @@ export class TimelineService {
           try {
             const reportLogPath = `${this.resolvedOutputDir}/${file}`;
             const reportLog = readFileSync(reportLogPath).toString();
-            if (reportLog != ''){
+            if (reportLog) {
               runnerResult = JSON.parse(reportLog);
             }
           } catch (error) {
