@@ -167,8 +167,11 @@ export class TimelineService {
         .forEach(file => {
           let runnerResult;
           try {
-            const reportLog = `${this.resolvedOutputDir}/${file}`;
-            runnerResult = JSON.parse(readFileSync(reportLog).toString());
+            const reportLogPath = `${this.resolvedOutputDir}/${file}`;
+            const reportLog = readFileSync(reportLogPath).toString();
+            if (reportLog) {
+              runnerResult = JSON.parse(reportLog);
+            }
           } catch (error) {
             console.log(error);
           } finally {
