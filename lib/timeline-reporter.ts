@@ -71,7 +71,8 @@ class TimelineReporter extends WDIOReporter {
     if (
       command.endpoint.includes('screenshot') &&
       command.result &&
-      command.result.value
+      command.result.value &&
+      this.test
     ) {
       try {
         const filepath = resolve(
