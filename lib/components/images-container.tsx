@@ -1,5 +1,6 @@
 import React from 'react';
 import fs from 'fs';
+import { basename } from 'path';
 
 const makeImageSource = (path, embed) => {
   if (embed) {
@@ -11,7 +12,7 @@ const makeImageSource = (path, embed) => {
       //do nothing
     }
   }
-  return path;
+  return `./${basename(path)}`;
 };
 
 const ImagesContainer = props => {
