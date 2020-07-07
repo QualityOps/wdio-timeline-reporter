@@ -69,6 +69,7 @@ class TimelineReporter extends WDIOReporter {
 
   onAfterCommand(command) {
     if (
+      this.reporterOptions.screenshotStrategy!== 'none' &&
       command.endpoint.includes('screenshot') &&
       command.result &&
       command.result.value &&
