@@ -19,6 +19,8 @@ const writeFilePromiseSync = promisify(writeFile);
 
 const BEFORE_CLICK = 'before:click';
 const ON_ERROR = 'on:error';
+const BEFORE_STEP = 'before:step'
+const AFTER_STEP = 'after:step'
 
 declare var browser: any;
 
@@ -41,7 +43,7 @@ export class TimelineService {
     );
     if (timelineFilter.length === 0) {
       throw new Error(
-        `Add timeline to reporters in wdio config: 
+        `Add timeline to reporters in wdio config:
             reporters: [[timeline]]
         `
       );
@@ -49,14 +51,14 @@ export class TimelineService {
     const timeline = timelineFilter[0];
     if (timeline.length !== 2 || typeof timeline[1] !== 'object') {
       throw new Error(
-        `Add reporter options object to timeline reporter: 
+        `Add reporter options object to timeline reporter:
             reporters: [[timeline, {}]]
         `
       );
     }
     if (!timeline[1].outputDir) {
       throw new Error(
-        `Set outputDir on reporter options object: 
+        `Set outputDir on reporter options object:
             reporters: [[timeline, {
               outputDir: 'desired_folder'
             }]]
@@ -103,6 +105,20 @@ export class TimelineService {
   beforeCommand(commandName) {
     const { screenshotStrategy } = this.reporterOptions;
     if (screenshotStrategy === BEFORE_CLICK && 'click' === commandName) {
+      browser.takeScreenshot();
+    }
+  }
+
+  beforeStep() {
+    const { screenshotStrategy } = this.reporterOptions;
+    if (screenshotStrategy === BEFORE_STEP) {
+      browser.takeScreenshot();
+    }
+  }
+
+  afterStep() {
+    const { screenshotStrategy } = this.reporterOptions;
+    if (screenshotStrategy === AFTER_STEP) {
       browser.takeScreenshot();
     }
   }
