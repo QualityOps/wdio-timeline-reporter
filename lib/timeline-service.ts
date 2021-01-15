@@ -107,12 +107,12 @@ export class TimelineService {
     }
   }
 
-  afterTest(test) {
+  afterTest(test,{passed}) {
     const { screenshotStrategy } = this.reporterOptions;
     if (screenshotStrategy === BEFORE_CLICK) {
       browser.takeScreenshot();
     }
-    if (screenshotStrategy === ON_ERROR && !test.passed) {
+    if (screenshotStrategy === ON_ERROR && !passed) {
       browser.takeScreenshot();
     }
   }
