@@ -205,19 +205,6 @@ export class TimelineService {
     }
   }
 
-  getBrowserNameAndCombo(capabilities) {
-    const name =
-      capabilities.browserName ||
-      capabilities.deviceName ||
-      'unknown browser name';
-    const version =
-      capabilities.browserVersion ||
-      capabilities.platformVersion ||
-      capabilities.version ||
-      'unknown browser version';
-    return `${name} ${version}`;
-  }
-
   generateTestResults(results) {
     this.stopTime = Date.now();
     const passed = results.reduce(
@@ -251,14 +238,14 @@ export class TimelineService {
         end: result.end,
         duration: result.duration,
         filename: result.specs[0],
-        browser: this.getBrowserNameAndCombo(result.capabilities),
+        capabilities: result.capabilities,
         suites: result.suites.map(suite => ({
           title: suite.title,
           duration: suite.duration,
           start: suite.start,
           end: suite.end,
           tests: suite.tests.map(test => ({
-            browser: this.getBrowserNameAndCombo(result.capabilities),
+            capabilities: result.capabilities,
             title: test.title,
             start: test.start,
             end: test.end,
