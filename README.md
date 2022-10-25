@@ -60,7 +60,7 @@ exports.config = {
   // ...
   reporters: [['timeline', { outputDir: './desired_location' }]],
   // ...
-  services: [[TimelineService]]
+  services: [[TimelineService, {}]]
 };
 ```
 
