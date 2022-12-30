@@ -51,7 +51,7 @@
     "@types/react-dom": "^16.0.9",
     "chai": "^4.2.0",
     "circular-json": "^0.5.7",
-    "mocha": "^6.1.4",
+    "mocha": "^10.2.0",
     "np": "^3.0.4",
     "rimraf": "^2.6.2",
     "ts-node": "^8.1.0",
